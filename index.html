@@ -1072,6 +1072,34 @@
   }
   .inline-thumb:hover { filter: brightness(1.05); }
   /* ============= PHOTO GALLERY ============= */
+
+  /* ============= PDF EMBED CARDS ============= */
+  .pdf-card {
+    margin: 0 0 20px;
+    border: 1px solid var(--md);
+    box-shadow: inset 1px 1px 0 var(--hi);
+    background: var(--face);
+  }
+  .pdf-card-title {
+    background: linear-gradient(180deg, var(--title-1), var(--title-2));
+    color: white;
+    padding: 4px 10px;
+    font-weight: bold;
+    font-size: 13px;
+    text-shadow: 1px 1px 0 rgba(0,0,0,0.4);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .pdf-card-title::before { content: "📄"; font-size: 13px; }
+  .pdf-card iframe {
+    display: block;
+    width: 100%;
+    height: 600px;
+    border: none;
+    border-top: 1px solid var(--md);
+    background: #fff;
+  }
   .photo-gallery {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
@@ -1581,13 +1609,14 @@
     <div class="tabs-wrap">
       <div class="tabs" role="tablist">
         <button class="tab active" data-tab="rhc-overview">Overview</button>
+        <button class="tab" data-tab="rhc-transition">Transition Reports</button>
         <button class="tab" data-tab="rhc-members">Members</button>
         <button class="tab" data-tab="rhc-committees">Committees</button>
         <button class="tab" data-tab="rhc-programs">Programs &amp; Events</button>
         <button class="tab" data-tab="rhc-tables">Master Tables</button>
         <button class="tab" data-tab="rhc-meetings">Meetings</button>
         <button class="tab" data-tab="rhc-recognition">Partners &amp; Future</button>
-        <button class="tab" data-tab="rhc-photos">Photos</button>
+        <button class="tab" data-tab="rhc-photos">Gallery</button>
       </div>
     </div>
 
@@ -1655,6 +1684,66 @@
             <p style="margin-top: 8px; font-style: italic;"><strong>Best of luck, Jeast on top!!</strong></p>
           </div>
         </div>
+      </section>
+
+      <section class="panel" data-panel="rhc-transition">
+        <header class="page-h">
+          <h1>Transition Reports</h1>
+          <div class="sub">Role-specific knowledge transfers for incoming staff.</div>
+        </header>
+
+        <div class="pdf-card">
+          <div class="pdf-card-title">President</div>
+          <iframe src="reports/presiden.pdf"></iframe>
+        </div>
+
+        <div class="pdf-card">
+          <div class="pdf-card-title">Vice President</div>
+          <iframe src="reports/vp.pdf"></iframe>
+        </div>
+
+        <div class="pdf-card">
+          <div class="pdf-card-title">Director of Marketing Transition Letter</div>
+          <div style="padding: 16px 18px; font-size: 14px; line-height: 1.55; background: var(--field);">
+            <p style="margin: 0 0 10px; max-width: 70ch;">Congrats on becoming director of Marketing of Jester East Residence Hall! I hope you
+              are proud of yourself for getting this role. In this role not only will you be able to create social
+              media content for the residence hall but you also will have the duty of leading the Jester East
+              social media committee.</p>
+            <p style="margin: 0 0 10px; max-width: 70ch;">In your role it is necessary to always keep up with the latest social
+              media trends, so your content is relatable to your residents. I would suggest keeping a social
+              media calendar and a folder of everything you guys publish. Some fun ideas we had this year
+              was council member instagram takeover, movie inspired reels, and informative resource posts.</p>
+            <p style="margin: 0 0 10px; max-width: 70ch;">In this position the most important thing is to have fun! Enjoy your time with the social media
+              committee and the residence hall council. I wish you the best and good luck!</p>
+            <p style="margin: 0; font-style: italic; color: var(--ink-soft);">&mdash; Alejandra</p>
+          </div>
+        </div>
+
+        <div class="pdf-card">
+          <div class="pdf-card-title">Director of Special Projects Transition Doc</div>
+          <iframe src="reports/Director%20of%20Special%20Projects%20Transition%20Doc.pdf"></iframe>
+        </div>
+
+        <div class="pdf-card">
+          <div class="pdf-card-title">Jeast RHC Sustainability Director Transition Doc</div>
+          <iframe src="reports/Jeast%20RHC%20Sustainability%20Director%20transition%20doc%20-%20Google%20Docs.pdf"></iframe>
+        </div>
+
+        <div class="pdf-card">
+          <div class="pdf-card-title">Jester East Finance Transition Document</div>
+          <iframe src="reports/Jester%20East%20Finance%20Transition%20Document.pdf"></iframe>
+        </div>
+
+        <div class="pdf-card">
+          <div class="pdf-card-title">Floor Representative Transition Document</div>
+          <iframe src="reports/Floor%20Representative%20Transition%20Document.pdf"></iframe>
+        </div>
+
+        <div class="pdf-card">
+          <div class="pdf-card-title">JE RHS Floor Rep Transition Document</div>
+          <iframe src="reports/JE%20RHS%20Floor%20Rep%20Transition%20Document.pdf"></iframe>
+        </div>
+
       </section>
 
       <section class="panel" data-panel="rhc-members">
@@ -2888,8 +2977,8 @@
 
       <section class="panel" data-panel="rhc-photos">
         <header class="page-h">
-          <h1>Photos</h1>
-          <div class="sub">A year in pictures — click any photo to expand.</div>
+          <h1>Gallery</h1>
+          <div class="sub">Check out @jesterunited and the box folder for more!!</div>
         </header>
         <div class="photo-gallery" id="rhc-photo-gallery"></div>
       </section>
