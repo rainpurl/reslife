@@ -1047,6 +1047,15 @@
     pointer-events: none;
   }
 
+
+  /* Wide variant for tables that need to breathe */
+  table.data.wide {
+    max-width: none;
+    width: 100%;
+  }
+  table.data.wide td:nth-child(1) { white-space: nowrap; }
+  table.data.wide td:nth-child(2) { white-space: nowrap; }
+
 </style>
 </head>
 <body>
@@ -1496,7 +1505,7 @@
         <button class="tab" data-tab="rhc-programs">Programs &amp; Events</button>
         <button class="tab" data-tab="rhc-tables">Master Tables</button>
         <button class="tab" data-tab="rhc-meetings">Meetings</button>
-        <button class="tab" data-tab="rhc-recognition">Recognition</button>
+        <button class="tab" data-tab="rhc-recognition">Partners &amp; Future</button>
       </div>
     </div>
 
@@ -1504,13 +1513,8 @@
       <section class="panel active" data-panel="rhc-overview">
         <header class="page-h">
           <h1>Jester East Residence Hall Council</h1>
-          <div class="sub">Year-End Summary Report &mdash; 2025&ndash;2026 Academic Year &middot; The University of Texas at Austin</div>
+          <div class="sub">Year-End Summary Report - 2025&ndash;2026 Academic Year &middot; The University of Texas at Austin</div>
         </header>
-        <p class="lede">Compiled from meeting agendas, event calendars, FRFs, and committee documents.
-          The Jester East RHC for the 2025&ndash;2026 academic year was organized into <mark>five primary groupings</mark>:
-          an Executive Board, Floor Representatives, Assembly Members (committee members), URHA Liaisons,
-          and professional/staff advisors.</p>
-
         <h2 class="section">Council structure at a glance</h2>
         <div class="gbox-grid">
           <div class="gbox">
@@ -1519,11 +1523,11 @@
           </div>
           <div class="gbox">
             <span class="gbox-title">Floor Representatives</span>
-            11 reps, one per JE floor &middot; full general-assembly members with secondary committee assignments.
+            11 reps &middot; full general-assembly members with secondary committee assignments.
           </div>
           <div class="gbox">
             <span class="gbox-title">Assembly Members</span>
-            11 committee members &middot; full GA voice; contributed across the standing committees.
+            17 committee members &middot; full GA voice; contributed across the standing committees.
           </div>
           <div class="gbox">
             <span class="gbox-title">URHA Liaisons</span>
@@ -1531,7 +1535,7 @@
           </div>
           <div class="gbox">
             <span class="gbox-title">Professional &amp; Student Staff</span>
-            ACC advisor Katres Brahmbhatt + Senior RA / RA Liaisons (Jaylen, Thang, Sam).
+            ACC advisor Katres + Senior RA / RA Liaisons (Jaylen, Thang, Sam).
           </div>
         </div>
 
@@ -1550,7 +1554,7 @@
           <div class="gbox">
             <span class="gbox-title">Social Media</span>
             <strong>JEast Social Media</strong>
-            <p class="small" style="margin: 6px 0 0;">Mondays &middot; Chairs Alejandra, Zoe, Keira, Erica &middot; merged with RA Social Collateral on Feb 27.</p>
+            <p class="small" style="margin: 6px 0 0;">Mondays &middot; Chair Alejandra &middot; merged with RA Social Collateral on Feb 27.</p>
           </div>
           <div class="gbox">
             <span class="gbox-title">Programming</span>
@@ -1559,28 +1563,13 @@
           </div>
         </div>
 
-        <h2 class="section">By the numbers</h2>
-        <table class="data">
-          <thead><tr><th>Metric</th><th>Value</th></tr></thead>
-          <tbody>
-            <tr><td>Annual programming budget</td><td>~$12,000 (vs. JW&rsquo;s ~$17,000)</td></tr>
-            <tr><td>Mid-year budget bump</td><td>+$159 announced Oct 17</td></tr>
-            <tr><td>Programming dollars left by 3/5</td><td>$959</td></tr>
-            <tr><td>Fall GA meetings</td><td>10</td></tr>
-            <tr><td>Spring GA meetings</td><td>14</td></tr>
-            <tr><td>Hygiene baskets refilled biweekly</td><td>39 (floors 1&ndash;10)</td></tr>
-            <tr><td>Largest single program</td><td>Trail of Lights &mdash; 372 attendees</td></tr>
-            <tr><td>Total recognized programs</td><td>40+ events fall &amp; spring</td></tr>
-          </tbody>
-        </table>
-
         <div class="dialog">
           <div class="bar">A note from Katres</div>
           <div class="body">
             <div class="icon">✉</div>
             <p>Members in multiple roles are listed under their highest-ranking position with secondary
             positions noted in parentheses throughout this report. Y&rsquo;all are going to do amazing
-            &mdash; Kayla and Keira were on the council last year and Jaylen and Sam have been working
+            - Kayla and Keira were on the council last year and Jaylen and Sam have been working
             with the council as well for quite some time.</p>
             <p>Email <a href="mailto:katresai@icloud.com">katresai@icloud.com</a>
             or call 442-799-8771 if you need anything. <strong>Best of luck, Jeast on top!</strong></p>
@@ -1591,12 +1580,11 @@
       <section class="panel" data-panel="rhc-members">
         <header class="page-h">
           <h1>Members</h1>
-          <div class="sub">Council roster, hierarchy, and committee assignments &mdash; 2025&ndash;2026.</div>
+          <div class="sub">Council roster, hierarchy, and committee assignments - 2025&ndash;2026.</div>
         </header>
 
         <h2 class="section">Executive Board</h2>
-        <p>Listed in hierarchy order. Each line shows: full name &mdash; title (other positions held).</p>
-        <table class="data">
+        <table class="data wide">
           <thead><tr><th>Name</th><th>Title</th><th>Other roles</th></tr></thead>
           <tbody>
             <tr><td><strong>Mica Fox</strong></td><td>President</td><td>URHA Senator; Social Media Committee</td></tr>
@@ -1606,11 +1594,11 @@
             <tr><td><strong>Zoe Winborn</strong></td><td>Historian</td><td>C3 Chair; Social Media</td></tr>
             <tr><td><strong>Erica Moreno</strong></td><td>Creative Director</td><td>TPC Chair; C3; Floor 10 Representative</td></tr>
             <tr><td><strong>Navya Venkatesh</strong></td><td>Director of Finance</td><td>TPC</td></tr>
-            <tr><td><strong>Layla Rucker</strong></td><td>Secretary</td><td>&mdash;</td></tr>
+            <tr><td><strong>Layla Rucker</strong></td><td>Secretary</td><td>-</td></tr>
             <tr><td><strong>Alejandra Quintero</strong></td><td>Director of Marketing</td><td>Social Media Chair</td></tr>
             <tr><td><strong>Selena O&rsquo;Boyle</strong></td><td>Director of Administration</td><td>C3; TPC</td></tr>
             <tr><td><strong>Abhishek Desai</strong></td><td>Director of Special Projects</td><td>C3</td></tr>
-            <tr><td><strong>Vince Castillo</strong></td><td>Director of Sustainability</td><td>&mdash;</td></tr>
+            <tr><td><strong>Vince Castillo</strong></td><td>Director of Sustainability</td><td>Social Media Committee</td></tr>
           </tbody>
         </table>
 
@@ -1645,19 +1633,25 @@
           <li>Bethzy Mendoza (Social Media)</li>
           <li>Javier Torres (TPC; C3; Social Media)</li>
           <li>Ajouk Otto (TPC; C3)</li>
+          <li>Hannah Rashid (Programming)</li>
+          <li>Karim Al Kharsa (Programming)</li>
+          <li>Spencer Robbins (Programming)</li>
+          <li>Alice Qiu (Programming)</li>
+          <li>Jincy George (Programming)</li>
+          <li>Emma Abraham (Programming)</li>
         </ul>
 
         <h2 class="section">URHA Liaisons</h2>
         <ul>
-          <li><strong>Kyle Pham</strong> &mdash; URHA Board Buddy (URHA Executive Board Director of Finance)</li>
-          <li><strong>Adam</strong> &mdash; URHA Board Buddy in spring (excused most weeks)</li>
-          <li><strong>Kaitlyn / Karina</strong> &mdash; proxied as Board Buddy after Adam transitioned out</li>
+          <li><strong>Kyle Pham</strong> - URHA Board Buddy (URHA Executive Board Director of Finance)</li>
+          <li><strong>Adam</strong> - URHA Board Buddy in spring (excused most weeks)</li>
+          <li><strong>Kaitlyn / Karina</strong> - proxied as Board Buddy after Adam transitioned out</li>
         </ul>
 
         <h2 class="section">Professional Staff</h2>
         <div class="gbox">
           <span class="gbox-title">Advisor</span>
-          <strong>Katres Brahmbhatt</strong> &mdash; Professional Staff Advisor (Assistant Complex Coordinator)
+          <strong>Katres</strong> - Professional Staff Advisor (Assistant Complex Coordinator)
           <p class="small" style="margin: 6px 0 0;">Primary administrative anchor; facilitator of purchasing, programming, funding approvals, and onboarding of members.</p>
         </div>
 
@@ -1684,12 +1678,12 @@
       <section class="panel" data-panel="rhc-committees">
         <header class="page-h">
           <h1>Standing Committees</h1>
-          <div class="sub">C3, TPC, and Social Media &mdash; year-in-review by committee.</div>
+          <div class="sub">C3, TPC, and Social Media - year-in-review by committee.</div>
         </header>
         <p class="lede">The council operated three primary standing committees, each with chairs and dedicated meeting cadences,
           plus a Programming committee. Committee members were considered general-assembly members.</p>
 
-        <h2 class="section">C3 &mdash; Community Corner Committee</h2>
+        <h2 class="section">C3 - Community Corner Committee</h2>
         <p><strong>Chairs:</strong> Keira and Zoe. <strong>Cadence:</strong> Mondays at 6:30 p.m. (some sessions extended to 5:30 p.m.).
           The committee was responsible for the Community Corner, the JE Lobby bulletin boards, and resident-facing handouts.</p>
 
@@ -1751,13 +1745,13 @@
 
         <hr class="sep" />
 
-        <h2 class="section">TPC &mdash; Tampons, Pads, Contraceptives</h2>
-        <p><strong>HAC &mdash; Hygiene Access Committee</strong> (recommended rebrand). <strong>Chair:</strong> Erica
+        <h2 class="section">TPC - Tampons, Pads, Contraceptives</h2>
+        <p><strong>HAC - Hygiene Access Committee</strong> (recommended rebrand). <strong>Chair:</strong> Erica
           (built a TPC request form and Jester layout maps). <strong>Cadence:</strong> Wednesdays at 3 p.m. through the spring
           (originally first Thursdays).</p>
 
         <p>The committee assembled, distributed, and biweekly-refilled hygiene baskets in every community bathroom on
-          floors 1&ndash;10 of Jester East &mdash; <strong>39 baskets total</strong> per the refill volunteer roster.
+          floors 1&ndash;10 of Jester East - <strong>39 baskets total</strong> per the refill volunteer roster.
           Each basket carried a QR code that linked to a request form; when residents requested refills, a TPC volunteer
           placed the requested product in a plastic bag and dropped it in the appropriate RA&rsquo;s basket originally,
           but due to ineffectiveness they did distribution themselves in the spring.</p>
@@ -1802,8 +1796,8 @@
 
         <hr class="sep" />
 
-        <h2 class="section">Social Media &mdash; JEast Social Media Team</h2>
-        <p><strong>Chairs:</strong> Alejandra, Zoe, Keira, Erica. Met regularly through the year. Started fall with
+        <h2 class="section">Social Media - JEast Social Media Team</h2>
+        <p><strong>Chair:</strong> Alejandra. Met regularly through the year. Started fall with
           brainstorming a posting schedule and ideas: <strong>1 post/week + Instagram polls + Instagram takeovers</strong>.</p>
 
         <p>On <strong>Feb 27</strong>, the committee merged with the RA Social Media Collateral team to become the unified
@@ -1816,7 +1810,7 @@
           <li>KPDH (Kpop Demon Hunters) promotion reel</li>
           <li>Resource booklet filming video in October/November</li>
           <li>Jester Formal (Jormal) recap posts</li>
-          <li>&ldquo;2016 post&rdquo; (highly successful &mdash; &ldquo;2016 post ate down&rdquo;)</li>
+          <li>&ldquo;2016 post&rdquo; (highly successful - &ldquo;2016 post ate down&rdquo;)</li>
           <li>Lucky Charms + Mar10 (Mario) recap posts</li>
           <li>Twilight content posted closer to Twilight Marathon</li>
           <li>Move-out themed TikToks (April): How to defrost fridge tutorial, ASMR slime making</li>
@@ -1833,7 +1827,7 @@
 
         <h2 class="section">Fall 2025 Semester</h2>
 
-        <h3 style="font-size: 12px; font-weight: bold; margin: 14px 0 6px;">Aloe! From Hall Council &mdash; August 27, 2025</h3>
+        <h3 style="font-size: 12px; font-weight: bold; margin: 14px 0 6px;">Aloe! From Hall Council - August 27, 2025</h3>
         <p>The kickoff event of the year. An info session for the RHC held in the Jester West Lobby at 6 p.m.
           Residents received snacks, succulents, treats, fidgets, and wellness kits while learning about hall council and how to join.</p>
         <ul>
@@ -1848,7 +1842,7 @@
             ZENY 3-Step Folding Ladder. (Purchaser: Rotem Cohen.)</li>
         </ul>
 
-        <h3 style="font-size: 12px; font-weight: bold; margin: 14px 0 6px;">Jester United / RHC Retreat &mdash; October 19, 2025</h3>
+        <h3 style="font-size: 12px; font-weight: bold; margin: 14px 0 6px;">Jester United / RHC Retreat - October 19, 2025</h3>
         <p>Joint East/West retreat at the JE Red River Lounge from 4&ndash;7 p.m. (&ldquo;secret :p it&rsquo;ll be fun!&rdquo;).
           Catered food, bonding, games, and prodevo (professional development) presentations from advisors. <strong>Attendance: 20.</strong></p>
         <ul>
@@ -1858,7 +1852,7 @@
             HEB Twist/Dr. B/Cola sodas, Capri Sun 30-pack variety, Tiff&rsquo;s Mix 3.5 dozen cookies + delivery fee.</li>
         </ul>
 
-        <h3 style="font-size: 12px; font-weight: bold; margin: 14px 0 6px;">HallowEast Movie Night (Coraline) &mdash; October 24, 2025</h3>
+        <h3 style="font-size: 12px; font-weight: bold; margin: 14px 0 6px;">HallowEast Movie Night (Coraline) - October 24, 2025</h3>
         <p>Held in the Red River Lounge, 7:45 snacks / 8 p.m. movie / ~10 end. Showed Coraline (with the option to swap)
           followed by a fun Kahoot quiz with a candy prize for the winner. Snacks and drinks provided; residents brought
           blankets and pillows and came in PJs. ~10 paper flyers were posted.</p>
@@ -1869,7 +1863,7 @@
             white frosted sugar cookies &times;2, chocolate chip cookies, Frito-Lay Snack Mix 42-ct, Nerds Halloween Spooky Gummy Clusters.</li>
         </ul>
 
-        <h3 style="font-size: 12px; font-weight: bold; margin: 14px 0 6px;">HallowEast / DTI Halloween Edition Costume Contest &mdash; October 25, 2025</h3>
+        <h3 style="font-size: 12px; font-weight: bold; margin: 14px 0 6px;">HallowEast / DTI Halloween Edition Costume Contest - October 25, 2025</h3>
         <p>Trick-or-Treat booths, costume contest, refreshments/snacks, and a costume drawing contest in the
           Jester Plaza &amp; Breezeway, 1&ndash;3 p.m.</p>
         <ul>
@@ -1880,7 +1874,7 @@
             bulk assorted candies, candy corn.</li>
         </ul>
 
-        <h3 style="font-size: 12px; font-weight: bold; margin: 14px 0 6px;">Rock the Pink &mdash; October 28, 2025</h3>
+        <h3 style="font-size: 12px; font-weight: bold; margin: 14px 0 6px;">Rock the Pink - October 28, 2025</h3>
         <p>A breast-cancer-awareness booth at a URHA-sponsored event in the Quad Courtyard, 7&ndash;9 p.m.
           Activities themed around pink and pink energy/zero-sugar drinks; messaging about breast cancer;
           &ldquo;charge up against breast cancer&rdquo; tagline; mini-golf, photobooth, ring-toss, beer-pong
@@ -1888,70 +1882,70 @@
           Residents were encouraged to post with hashtags.</p>
         <ul>
           <li><strong>Leads:</strong> Mica, Austin (Setup: Keira, Zoe; During: Kayla, Zoe, Keira, Abhishek; Takedown: Brooke, Julian)</li>
-          <li><strong>Campus Partner:</strong> URHA (URHA covered the cost &mdash; <strong>$0 to JE RHC + $511.62 from URHA collaborative fund</strong>)</li>
+          <li><strong>Campus Partner:</strong> URHA (URHA covered the cost - <strong>$0 to JE RHC + $511.62 from URHA collaborative fund</strong>)</li>
           <li><strong>Attendance:</strong> ~350 residents</li>
           <li><strong>Items</strong> (Amazon, $511.62): table cloth, pink ribbon stickers (600 pcs), cones ring toss,
             PRIME Hydration Strawberry Watermelon 12-pk &times;6, Poppi Soda Raspberry Rose 12-pk &times;5,
             Gatorade Zero Watermelon Splash 12-pk &times;14, Red Bull Wild Berries Pink Edition 24-pk &times;3.</li>
         </ul>
 
-        <h3 style="font-size: 12px; font-weight: bold; margin: 14px 0 6px;">Jessence Distribution / Purchase Order &mdash; October 28, 2025</h3>
+        <h3 style="font-size: 12px; font-weight: bold; margin: 14px 0 6px;">Jessence Distribution / Purchase Order - October 28, 2025</h3>
         <p>A separate $72.70 Amazon purchase to assemble &ldquo;Jessence&rdquo; hygiene goody bags. Items: Nature&rsquo;s Oil Witch Hazel 1 gallon,
           Lemongrass Essential Oil 16 oz, small clear travel spray bottles &times;3.</p>
 
-        <h3 style="font-size: 12px; font-weight: bold; margin: 14px 0 6px;">D&iacute;a de los Muertos &mdash; November 2, 2025</h3>
+        <h3 style="font-size: 12px; font-weight: bold; margin: 14px 0 6px;">D&iacute;a de los Muertos - November 2, 2025</h3>
         <p>An ofrenda was set up next to the Community Corner on the night of October 31 (residents could submit photos
           via Google Form), followed by a celebration in the JE Lobby on November 2 at 7 p.m. with food, music, and a
           screening of &ldquo;Book of Life&rdquo; in the TV lounge.</p>
         <ul>
           <li><strong>Lead:</strong> Katres (Setup: Zoe, Austin, Brooke, Vince, Medha)</li>
-          <li><strong>Cost:</strong> $342 (per event calendar &mdash; itemized FRF totaled $274.08 with Amazon $67.97 + HEB $206.11)</li>
+          <li><strong>Cost:</strong> $342 (per event calendar - itemized FRF totaled $274.08 with Amazon $67.97 + HEB $206.11)</li>
           <li><strong>Attendance:</strong> 342</li>
-          <li><strong>Items:</strong> Amazon &mdash; Mexico Tablecloth 60&times;104, 82-pc Day of the Dead Altar Kit (LED candles, paper marigolds),
-            rechargeable acrylic flameless votives. HEB &mdash; Floral 5-Stem Marigold Bunch &times;2, 40-ct Conchas, Mini Pan de Polvo cookies &times;3,
+          <li><strong>Items:</strong> Amazon - Mexico Tablecloth 60&times;104, 82-pc Day of the Dead Altar Kit (LED candles, paper marigolds),
+            rechargeable acrylic flameless votives. HEB - Floral 5-Stem Marigold Bunch &times;2, 40-ct Conchas, Mini Pan de Polvo cookies &times;3,
             Texas Tamale Co. Assorted Tamales &times;11, Herdez Mild Salsa Verde &times;2, HEB Fresh Guacamole &times;2,
             Nestle Abuelita Mexican Hot Chocolate &times;3, half-size aluminum pan.</li>
         </ul>
 
-        <h3 style="font-size: 12px; font-weight: bold; margin: 14px 0 6px;">Wicked Movie Night &mdash; November 7, 2025</h3>
+        <h3 style="font-size: 12px; font-weight: bold; margin: 14px 0 6px;">Wicked Movie Night - November 7, 2025</h3>
         <p>Showing of &ldquo;Wicked&rdquo; with popcorn at the Red River Lounge, 7:45 snacks / 8 p.m. start.
           Setup/help from Kayla, Katres, Austin, Erica, Rayyan, Maggie.</p>
         <ul>
           <li><strong>Leads:</strong> Austin, Kayla; Setup: Kayla, Brooke, Selena, Abhishek</li>
           <li><strong>Cost:</strong> $172.55 &middot; <strong>Attendance:</strong> 45</li>
-          <li><strong>Items:</strong> HEB &mdash; Kernel Season&rsquo;s Movie Theater Butter Oil &times;5, pink frosted sugar cookies, sugar cookies 18-pc,
+          <li><strong>Items:</strong> HEB - Kernel Season&rsquo;s Movie Theater Butter Oil &times;5, pink frosted sugar cookies, sugar cookies 18-pc,
             butter salt, HEB Cola/Dr. B/Twist/Root Beer 12-pk cans, heavy-duty paper plates 100-ct.
-            Amazon &mdash; 48-pc round floor pillows ($95.99).</li>
+            Amazon - 48-pc round floor pillows ($95.99).</li>
         </ul>
 
-        <h3 style="font-size: 12px; font-weight: bold; margin: 14px 0 6px;">Kpop Demon Hunters Movie Night &mdash; November 15, 2025</h3>
+        <h3 style="font-size: 12px; font-weight: bold; margin: 14px 0 6px;">Kpop Demon Hunters Movie Night - November 15, 2025</h3>
         <p>Maruchan ramen with assorted toppings while watching Kpop Demon Hunters in the Red River Lounge,
           7:45 snacks / 8 p.m. movie.</p>
         <ul>
           <li><strong>Leads:</strong> Mica, Zoe (Setup/During/Takedown: Mica, Kayla)</li>
           <li><strong>Cost:</strong> $90.92 &middot; <strong>Attendance:</strong> 78</li>
-          <li><strong>Items:</strong> HEB &mdash; Beef/Chicken/Shrimp Maruchan multipacks (29 packs total), chili oil &times;2, lime juice,
-            soy sauce, sriracha, toasted sesame seeds, sliced green onion &times;2. Amazon &mdash; electric kettles 1.7L &times;2 ($28.78).</li>
+          <li><strong>Items:</strong> HEB - Beef/Chicken/Shrimp Maruchan multipacks (29 packs total), chili oil &times;2, lime juice,
+            soy sauce, sriracha, toasted sesame seeds, sliced green onion &times;2. Amazon - electric kettles 1.7L &times;2 ($28.78).</li>
         </ul>
 
-        <h3 style="font-size: 12px; font-weight: bold; margin: 14px 0 6px;">A Little Library &mdash; November 15, 2025</h3>
+        <h3 style="font-size: 12px; font-weight: bold; margin: 14px 0 6px;">A Little Library - November 15, 2025</h3>
         <p>Donated bookshelf installation for the JE Lobby. Funded $96.92 (Amazon): 6-Tier Tree Bookshelf ($34.99),
           magnetic name tags 15-pack ($21.99), Twinings Herbal Tea Variety Pack 40-ct ($19.95), 5-piece storage basket set ($19.99).
           Books were sourced for free; the team had been seeking shelving and signage. Bookshelf arrived November 7 and was assembled.</p>
 
-        <h3 style="font-size: 12px; font-weight: bold; margin: 14px 0 6px;">Mega-Mindfulness / Megamind Movie Night &mdash; November 19, 2025</h3>
+        <h3 style="font-size: 12px; font-weight: bold; margin: 14px 0 6px;">Mega-Mindfulness / Megamind Movie Night - November 19, 2025</h3>
         <p>Movie night themed around Megamind in the Red River Lounge using the new popcorn machine,
           7:45 snacks / 8 p.m. start to ~10 p.m.</p>
         <ul>
           <li><strong>Leads:</strong> Kayla, Abhishek (Setup: Abhishek, Kayla, Keira)</li>
           <li><strong>Cost:</strong> $190.44 &middot; <strong>Attendance:</strong> 22</li>
-          <li><strong>Items:</strong> HEB &mdash; mini pretzel sticks, Chex Mix, Doritos Party Size, Capri Sun 30-ct,
+          <li><strong>Items:</strong> HEB - mini pretzel sticks, Chex Mix, Doritos Party Size, Capri Sun 30-ct,
             sour cream &amp; onion / BBQ chips, HEB Twist &amp; Cola 12-ct, napkins 250-ct, bowls 70-ct, Nerds gummy clusters (prize).
-            Amazon &mdash; 5-piece storage basket set, prize blanket, Megamind sticker, Orville Redenbacher&rsquo;s gourmet kernels,
+            Amazon - 5-piece storage basket set, prize blanket, Megamind sticker, Orville Redenbacher&rsquo;s gourmet kernels,
             popcorn sleeves 800-ct, Nabisco cookie &amp; candy variety, M&amp;M minis, sour bear gummies, Gorilla Super Glue Gel.</li>
         </ul>
 
-        <h3 style="font-size: 12px; font-weight: bold; margin: 14px 0 6px;">Fuel for Finals &mdash; November 17, 2025</h3>
+        <h3 style="font-size: 12px; font-weight: bold; margin: 14px 0 6px;">Fuel for Finals - November 17, 2025</h3>
         <p>&ldquo;Cute caf&eacute; vibes&rdquo; with a barista experience, custom menu, sandwiches and sweets in the Red River Lounge,
           6:30&ndash;9 p.m. (until supplies lasted).</p>
         <ul>
@@ -1967,7 +1961,7 @@
             Imperial sugar cubes, paper napkins, Splenda Stevia packets.</li>
         </ul>
 
-        <h3 style="font-size: 12px; font-weight: bold; margin: 14px 0 6px;">Trail of Lights (Jester United) &mdash; December 4, 2025</h3>
+        <h3 style="font-size: 12px; font-weight: bold; margin: 14px 0 6px;">Trail of Lights (Jester United) - December 4, 2025</h3>
         <p>The flagship JesterUnited holiday event at Jester Plaza, with the Jester West RHC.
           Activities included plaza decorating with holiday lights, an apple-cider and hot-chocolate bar (candy canes, marshmallows),
           cookie decorating, a holiday photobooth with polaroids, custom snow-globe making, and an ugly sweater contest at the lights launch.
@@ -1978,15 +1972,15 @@
           <li><strong>Campus Partner:</strong> Jester West RHC</li>
           <li><strong>Cost:</strong> $985.66 (event calendar lists Cost/Attendance: 372)</li>
           <li><strong>Attendance:</strong> 372 (largest single program of the year)</li>
-          <li><strong>Items:</strong> HEB &mdash; 300 sugar cookies (custom order, $90), authentic hot chocolate drink tablets 6-pk &times;20 ($116.40),
+          <li><strong>Items:</strong> HEB - 300 sugar cookies (custom order, $90), authentic hot chocolate drink tablets 6-pk &times;20 ($116.40),
             Higher Harvest ND Original Avena Milk &times;20, Louisburg Cider Mill Old Fashioned Apple Cider &times;9.
-            Amazon &mdash; INSTAX Mini Instant Film 100-pk &times;2 + Fujifilm Instax Mini 12 camera ($249.98 + $89.99),
+            Amazon - INSTAX Mini Instant Film 100-pk &times;2 + Fujifilm Instax Mini 12 camera ($249.98 + $89.99),
             Spangler Red &amp; White Mini Candy Canes 500-ct, mini marshmallows 2 lb bag, ugly Christmas sweater medals 3-pc,
             32-pack Christmas plastic snow globes kit &times;2 ($75.98), Wilton Christmas cookie icing 3-pack &times;3,
             ECOLipak 500-ct compostable paper cups.</li>
         </ul>
 
-        <h3 style="font-size: 12px; font-weight: bold; margin: 14px 0 6px;">Holiday Movie Night (&ldquo;Whoville and Hot Cocoa&rdquo;) &mdash; December 5, 2025</h3>
+        <h3 style="font-size: 12px; font-weight: bold; margin: 14px 0 6px;">Holiday Movie Night (&ldquo;Whoville and Hot Cocoa&rdquo;) - December 5, 2025</h3>
         <p>Holiday-themed movie with hot cocoa and popcorn in the Red River Lounge, 7:45 snacks / 8 p.m. start.
           Free to RHC ($0 incremental cost).</p>
         <ul>
@@ -1994,125 +1988,125 @@
           <li><strong>Cost:</strong> $0 &middot; <strong>Attendance:</strong> 65</li>
         </ul>
 
-        <h3 style="font-size: 12px; font-weight: bold; margin: 14px 0 6px;">Gingerbread House Decorating &mdash; December 3, 2025</h3>
+        <h3 style="font-size: 12px; font-weight: bold; margin: 14px 0 6px;">Gingerbread House Decorating - December 3, 2025</h3>
         <p>Held in the Red River Lounge, 5&ndash;7 p.m.</p>
         <ul>
           <li><strong>Leads:</strong> Selena, Maggie (Setup: Layla, Vince)</li>
           <li><strong>Cost:</strong> $90 (per event calendar) &middot; <strong>Attendance:</strong> 90</li>
         </ul>
 
-        <h3 style="font-size: 12px; font-weight: bold; margin: 14px 0 6px;">Cookie Decorating &mdash; December 3, 2025</h3>
+        <h3 style="font-size: 12px; font-weight: bold; margin: 14px 0 6px;">Cookie Decorating - December 3, 2025</h3>
         <p>Cookie decorating event paired with the gingerbread theme. Funded $97.74 across HEB and Target.</p>
         <ul>
-          <li><strong>Items:</strong> Target &mdash; Christmas writing icing &times;2, Christmas cookie decorating kit &times;3, gingerbread houses &times;2, table cloths &times;4. HEB &mdash; Swiss Miss Marshmallow Mix &times;2.</li>
+          <li><strong>Items:</strong> Target - Christmas writing icing &times;2, Christmas cookie decorating kit &times;3, gingerbread houses &times;2, table cloths &times;4. HEB - Swiss Miss Marshmallow Mix &times;2.</li>
         </ul>
 
-        <h3 style="font-size: 12px; font-weight: bold; margin: 14px 0 6px;">Colors &amp; Connection &mdash; December 2, 2025</h3>
+        <h3 style="font-size: 12px; font-weight: bold; margin: 14px 0 6px;">Colors &amp; Connection - December 2, 2025</h3>
         <p>A creative wellness event in the Red River Lounge from 5 p.m. setup / 6 p.m. event start.
           Inspired by an Art and Healing project (LinkedIn link cited in the event calendar).</p>
         <ul>
           <li><strong>Lead:</strong> Nicole Wu (Setup: Kayla, Keira)</li>
           <li><strong>Cost:</strong> $374.34 &middot; <strong>Attendance:</strong> 36</li>
-          <li><strong>Items:</strong> Amazon &mdash; DEDC LED mini spot lights 4-pc, white beeswax pellets 5 lb,
+          <li><strong>Items:</strong> Amazon - DEDC LED mini spot lights 4-pc, white beeswax pellets 5 lb,
             silicone freezer trays &times;2 (incl. W&amp;P Cup Cubes Blue), Twinings tea herbal variety,
             bulk candy mix variety pack ($44.95), 5-pc round small woven basket set,
             chocolate bulk candy variety ($39.97), Nature Valley granola &times;5 ($56.35),
             ESRICH 4&times;4&Prime; small canvases &times;2, paint brushes &amp; palette set,
             24-pack hand cream gift set, Cottonelle flushable wet wipes.
-            Target &mdash; Mezcla Puff Bars &times;3, stoneware threshold container/bowl set &times;3, Fresh Sun Beams Mandarin Oranges.</li>
+            Target - Mezcla Puff Bars &times;3, stoneware threshold container/bowl set &times;3, Fresh Sun Beams Mandarin Oranges.</li>
         </ul>
 
-        <h3 style="font-size: 12px; font-weight: bold; margin: 14px 0 6px;">Ornament Decorating &mdash; December 8, 2025</h3>
+        <h3 style="font-size: 12px; font-weight: bold; margin: 14px 0 6px;">Ornament Decorating - December 8, 2025</h3>
         <p>Ornament decorating event in the Red River Lounge at 7:30 p.m.</p>
         <ul>
           <li><strong>Leads:</strong> Navya, Brooke</li>
           <li><strong>Cost:</strong> $97.01 &middot; <strong>Attendance:</strong> 54</li>
-          <li><strong>Items:</strong> Amazon &mdash; artificial pine branches 24-pc + red berries 72-pc &times;2, clear plastic ornaments 24-ct &times;2.
-            Target &mdash; Swiss Miss Milk Chocolate Hot Cocoa 8-ct &times;3, Holiday Oreos 45-ct &times;2.</li>
+          <li><strong>Items:</strong> Amazon - artificial pine branches 24-pc + red berries 72-pc &times;2, clear plastic ornaments 24-ct &times;2.
+            Target - Swiss Miss Milk Chocolate Hot Cocoa 8-ct &times;3, Holiday Oreos 45-ct &times;2.</li>
         </ul>
 
         <hr class="sep" />
 
         <h2 class="section">Spring 2026 Semester</h2>
 
-        <h3 style="font-size: 12px; font-weight: bold; margin: 14px 0 6px;">Jester Formal / &ldquo;Jormal&rdquo; &mdash; January 15, 2026</h3>
+        <h3 style="font-size: 12px; font-weight: bold; margin: 14px 0 6px;">Jester Formal / &ldquo;Jormal&rdquo; - January 15, 2026</h3>
         <p>Jester East and West held a formal in the Jester East Lobby starting 7 p.m. Planning leveraged collaborative funds from URHA.
           Proposal was &ldquo;fully approved all the way up to the director level,&rdquo; presented to URHA Eboard by Mica and Manoj,
           and received URHA funding. The event won <strong>&ldquo;Best Vibes&rdquo;</strong> award at year-end and was
-          &ldquo;the first UHD event of 2026&rdquo; &mdash; recognized for forward planning.</p>
+          &ldquo;the first UHD event of 2026&rdquo; - recognized for forward planning.</p>
         <ul>
           <li><strong>Campus Partners:</strong> Jester West RHC + URHA (funding)</li>
           <li><strong>Lead:</strong> Vince</li>
         </ul>
 
-        <h3 style="font-size: 12px; font-weight: bold; margin: 14px 0 6px;">Jester City Limits (Org Fair) &mdash; Tentative late January / moved later</h3>
+        <h3 style="font-size: 12px; font-weight: bold; margin: 14px 0 6px;">Jester City Limits (Org Fair) - Tentative late January / moved later</h3>
         <p>Org fair for student orgs and departments planned for the spring. JesterUnited event with the West RHC.
           RHC provided food, setup support, and organized a stamp/passport system.
-          Campus Partners: Jester West RHC and student organizations (Pivot Point Central &mdash; Henry Kim).</p>
+          Campus Partners: Jester West RHC and student organizations (Pivot Point Central - Henry Kim).</p>
 
-        <h3 style="font-size: 12px; font-weight: bold; margin: 14px 0 6px;">Red River Cinema: Twilight &mdash; January 30, 2026</h3>
+        <h3 style="font-size: 12px; font-weight: bold; margin: 14px 0 6px;">Red River Cinema: Twilight - January 30, 2026</h3>
         <p>First Red River Cinema Friday-night movie of the spring. The series itself won an OTM award
           (&ldquo;Jester East won an OTM award for our Red River Cinema series!&rdquo;).</p>
         <ul>
           <li><strong>Leads:</strong> Erica, Zoe</li>
           <li><strong>Cost:</strong> $89.61 (HEB + Amazon)</li>
-          <li><strong>Items:</strong> HEB &mdash; Frito Lay flavor mix chips, apple strudel pastry bites, two-bite brownies &times;3,
+          <li><strong>Items:</strong> HEB - Frito Lay flavor mix chips, apple strudel pastry bites, two-bite brownies &times;3,
             Kool-Aid drink mix (watermelon, black cherry, strawberry, cherry, &times;2 each),
             Sprite/Barq&rsquo;s/Diet Coke/Coca-Cola 12-can fridge packs, pure cane sugar 2 lb.
-            Amazon &mdash; 20-pack blood bags for drinks 8.5 oz ($9.99) &mdash; for the vampire theme.</li>
+            Amazon - 20-pack blood bags for drinks 8.5 oz ($9.99) - for the vampire theme.</li>
         </ul>
 
-        <h3 style="font-size: 12px; font-weight: bold; margin: 14px 0 6px;">Red River Cinema: 10 Things I Hate About You &mdash; February 5, 2026</h3>
+        <h3 style="font-size: 12px; font-weight: bold; margin: 14px 0 6px;">Red River Cinema: 10 Things I Hate About You - February 5, 2026</h3>
         <p>Second movie night of the spring; happened the same night as the Feb 5 GA meeting.</p>
 
-        <h3 style="font-size: 12px; font-weight: bold; margin: 14px 0 6px;">Bunches of Love &mdash; February 10, 2026</h3>
+        <h3 style="font-size: 12px; font-weight: bold; margin: 14px 0 6px;">Bunches of Love - February 10, 2026</h3>
         <p>Safe-sex education paired with build-your-own mini-bouquet activity in the Jester East Lobby, 7 p.m.
           Mini bouquets of flowers from HEB (trimmed and made into cones), with chocolate, flower, and origami tutorials.</p>
         <ul>
           <li><strong>Lead:</strong> Keira (Setup: Layla)</li>
         </ul>
 
-        <h3 style="font-size: 12px; font-weight: bold; margin: 14px 0 6px;">Baked with Love &mdash; February 11, 2026</h3>
-        <p>Cookie decorating in the Red River Lounge, 4&ndash;6 p.m. &mdash; heart-shaped cookies and bears, icing, and napkins.</p>
+        <h3 style="font-size: 12px; font-weight: bold; margin: 14px 0 6px;">Baked with Love - February 11, 2026</h3>
+        <p>Cookie decorating in the Red River Lounge, 4&ndash;6 p.m. - heart-shaped cookies and bears, icing, and napkins.</p>
         <ul>
           <li><strong>Leads:</strong> Maggie, Selena</li>
-          <li><strong>Cost:</strong> $179.39 (Target) &mdash; Valentine&rsquo;s Teddy Bear Heart cookie kit &times;8 ($79.92),
+          <li><strong>Cost:</strong> $179.39 (Target) - Valentine&rsquo;s Teddy Bear Heart cookie kit &times;8 ($79.92),
             Valentine&rsquo;s Sparkle Heart cookie kit &times;8 ($79.92), 4-pack writing icing &times;3, rectangular table covers &times;4,
             white paper plates &times;2.</li>
         </ul>
 
-        <h3 style="font-size: 12px; font-weight: bold; margin: 14px 0 6px;">Red River Cinema: Scary Movie 4 &mdash; February 13, 2026</h3>
+        <h3 style="font-size: 12px; font-weight: bold; margin: 14px 0 6px;">Red River Cinema: Scary Movie 4 - February 13, 2026</h3>
         <ul><li><strong>Leads:</strong> Erica, Austin</li></ul>
 
-        <h3 style="font-size: 12px; font-weight: bold; margin: 14px 0 6px;">Red River Cinema: Princess Bride &mdash; February 20, 2026</h3>
+        <h3 style="font-size: 12px; font-weight: bold; margin: 14px 0 6px;">Red River Cinema: Princess Bride - February 20, 2026</h3>
         <ul><li><strong>Lead:</strong> Keira</li></ul>
 
-        <h3 style="font-size: 12px; font-weight: bold; margin: 14px 0 6px;">Donation Drive &mdash; February 19, 2026</h3>
+        <h3 style="font-size: 12px; font-weight: bold; margin: 14px 0 6px;">Donation Drive - February 19, 2026</h3>
         <p>Clothing/food/book donation drive coordinated with East/West sustainability collab. $28.98 spent at HEB on
           Sterilite Latching Storage Boxes &times;3 ($19.50) and fragrance-free detergent pacs.</p>
         <ul>
           <li><strong>Leads:</strong> Vince + Abhishek (and clothing drive deliveries to St. Vincent April 20 &ndash; May 1)</li>
         </ul>
 
-        <h3 style="font-size: 12px; font-weight: bold; margin: 14px 0 6px;">Red River Cinema: The Notebook &mdash; February 27, 2026</h3>
+        <h3 style="font-size: 12px; font-weight: bold; margin: 14px 0 6px;">Red River Cinema: The Notebook - February 27, 2026</h3>
         <ul><li><strong>Leads:</strong> Prisha, Erica, Katres</li></ul>
 
-        <h3 style="font-size: 12px; font-weight: bold; margin: 14px 0 6px;">Red River Cinema: Rio / Pitch Perfect &mdash; March 6, 2026</h3>
-        <p>Movie chosen by Instagram poll &mdash; Pitch Perfect and Rio were tied; Rio was selected (per the 3.12 agenda).</p>
+        <h3 style="font-size: 12px; font-weight: bold; margin: 14px 0 6px;">Red River Cinema: Rio / Pitch Perfect - March 6, 2026</h3>
+        <p>Movie chosen by Instagram poll - Pitch Perfect and Rio were tied; Rio was selected (per the 3.12 agenda).</p>
         <ul><li><strong>Leads:</strong> Alejandra, Keira</li></ul>
 
-        <h3 style="font-size: 12px; font-weight: bold; margin: 14px 0 6px;">Spring Forward &mdash; March 9, 2026</h3>
+        <h3 style="font-size: 12px; font-weight: bold; margin: 14px 0 6px;">Spring Forward - March 9, 2026</h3>
         <p>Caffeine boost in the Jester East Lobby from 7&ndash;10 a.m. to give residents an energy boost after losing
           an hour to daylight saving time.</p>
         <ul>
           <li><strong>Leads:</strong> Mica, Keira, Vince, Austin</li>
           <li><strong>Cost:</strong> $364.45 (final used FRF, after a $441.92 v1 was scrapped)</li>
-          <li><strong>Items (final):</strong> Amazon &mdash; pop fidget toys 57-pc &times;2, motivational stress balls 100-pc.
-            HEB &mdash; Red Bull &times;4 ($77.92), Alani Nu &times;2, Monster Energy &times;2, Bloom &times;4 ($79.92),
+          <li><strong>Items (final):</strong> Amazon - pop fidget toys 57-pc &times;2, motivational stress balls 100-pc.
+            HEB - Red Bull &times;4 ($77.92), Alani Nu &times;2, Monster Energy &times;2, Bloom &times;4 ($79.92),
             Starbucks Doubleshot Cans &times;4, Liquid Death Sweet Tea &times;4, HALFDAY Peach Iced Tea &times;3.</li>
         </ul>
 
-        <h3 style="font-size: 12px; font-weight: bold; margin: 14px 0 6px;">Lucky Charms &mdash; March 11, 2026</h3>
+        <h3 style="font-size: 12px; font-weight: bold; margin: 14px 0 6px;">Lucky Charms - March 11, 2026</h3>
         <p>Charm-bracelet/key-charm/bookmark making in the Red River Lounge, 6&ndash;7 p.m.
           Leprechaun-themed with Irish pub music, green snacks, Lucky Charms marshmallows, chocolate gold coins,
           scavenger hunt with rainbow at the end (&ldquo;follow the rainbow&rdquo; prize), Bevo template charms.
@@ -2120,19 +2114,19 @@
         <ul>
           <li><strong>Lead:</strong> Keira (Setup: Leon, Karim, Austin tentative)</li>
           <li><strong>Cost:</strong> $99.58 / $119.55 (two FRFs filed; the $99.58 version was used)</li>
-          <li><strong>Items:</strong> Amazon &mdash; Kandi Pony Beads 3500-pc, RYKOMO Acrylic Charms 1250-pc,
+          <li><strong>Items:</strong> Amazon - Kandi Pony Beads 3500-pc, RYKOMO Acrylic Charms 1250-pc,
             bag charm hooks 100-pc 6-color, chocolate gold coins 1 lb, Lucky Charms cereal bowls 12-pck &times;2,
             Lucky Charms cereal bars 16-pck &times;2.</li>
         </ul>
 
-        <h3 style="font-size: 12px; font-weight: bold; margin: 14px 0 6px;">Red River Cinema: Sinners &mdash; March 12, 2026</h3>
+        <h3 style="font-size: 12px; font-weight: bold; margin: 14px 0 6px;">Red River Cinema: Sinners - March 12, 2026</h3>
         <p>Tied to a small $9.99 Amazon FRF for Halloween Teeth Fangs 36-pc (white) for the vampire-themed movie.</p>
 
-        <h3 style="font-size: 12px; font-weight: bold; margin: 14px 0 6px;">Spring into the Season &mdash; March 24, 2026</h3>
+        <h3 style="font-size: 12px; font-weight: bold; margin: 14px 0 6px;">Spring into the Season - March 24, 2026</h3>
         <p>Air-plant and plant-pot decorating to celebrate the equinox / arrival of spring in the Red River Lounge, 6:30&ndash;7:30 p.m.</p>
         <ul><li><strong>Leads:</strong> Alejandra, Mica, Navya</li></ul>
 
-        <h3 style="font-size: 12px; font-weight: bold; margin: 14px 0 6px;">Egg Hunt &mdash; March 25, 2026</h3>
+        <h3 style="font-size: 12px; font-weight: bold; margin: 14px 0 6px;">Egg Hunt - March 25, 2026</h3>
         <p>Egg hunt and spoon relay in the Red River Lounge, 8&ndash;9 p.m. 20 participants max, with prizes.
           Coordinated with URHA&rsquo;s OTM writing party (which preceded it 6&ndash;7 p.m.); URHA helped purchase decorations
           and set up as thanks for letting events overlap. Praised by Katres at the 3.26 meeting:
@@ -2140,32 +2134,32 @@
           Loved the different components and it was a very impressive spread.&rdquo;</em></p>
         <ul><li><strong>Leads:</strong> Abhishek, Carmen</li></ul>
 
-        <h3 style="font-size: 12px; font-weight: bold; margin: 14px 0 6px;">Red River Cinema: Shark Tales? &mdash; March 27, 2026</h3>
+        <h3 style="font-size: 12px; font-weight: bold; margin: 14px 0 6px;">Red River Cinema: Shark Tales? - March 27, 2026</h3>
         <ul><li><strong>Leads:</strong> Keira, Carmen</li></ul>
 
-        <h3 style="font-size: 12px; font-weight: bold; margin: 14px 0 6px;">Red River Cinema: Bottoms &mdash; April 1, 2026 (originally planned April 3rd, moved)</h3>
+        <h3 style="font-size: 12px; font-weight: bold; margin: 14px 0 6px;">Red River Cinema: Bottoms - April 1, 2026 (originally planned April 3rd, moved)</h3>
         <p>Movie night for Bottoms (planned at $73.59 across Amazon scratch-off movie posters and HEB sodas/snacks;
-          FRF marked &ldquo;did not use&rdquo; &mdash; likely partially executed).</p>
+          FRF marked &ldquo;did not use&rdquo; - likely partially executed).</p>
         <ul><li><strong>Leads:</strong> Mica, Zoe, Carmen</li></ul>
 
-        <h3 style="font-size: 12px; font-weight: bold; margin: 14px 0 6px;">Twilight Marathon (&ldquo;Twilight Week&rdquo;) &mdash; April 7&ndash;10, 2026</h3>
+        <h3 style="font-size: 12px; font-weight: bold; margin: 14px 0 6px;">Twilight Marathon (&ldquo;Twilight Week&rdquo;) - April 7&ndash;10, 2026</h3>
         <p>A four-day marathon in the Red River Lounge starting Tuesday April 7 with Twilight, then continuing the saga
           through April 10. Movies started at 7:30 p.m. each night. &ldquo;A week full of snacks and vampire things.&rdquo;
           Erica reached out to URHA for extra funding. Raffle for T-shirts (&ldquo;Bella, where have you been loca?&rdquo;).</p>
         <ul>
           <li><strong>Leads:</strong> Navya, Erica</li>
           <li><strong>Cost:</strong> $221.53 (Amazon + HEB + Target)</li>
-          <li><strong>Items:</strong> Target &mdash; white frosted sprinkles sugar cookies &times;2, Twizzlers strawberry,
+          <li><strong>Items:</strong> Target - white frosted sprinkles sugar cookies &times;2, Twizzlers strawberry,
             Frito-Lay variety pack &times;2, Frito-Lay Flamin&rsquo; Hot mix &times;2, brownie bites 12-ct,
             Ghirardelli milk chocolate squares 4.8 oz, gluten-free mini cupcakes.
-            HEB &mdash; Country Time Lemonade Drink Mix &times;4, Kool-Aid Cherry &times;24, apple strudel pastry bites &times;2,
+            HEB - Country Time Lemonade Drink Mix &times;4, Kool-Aid Cherry &times;24, apple strudel pastry bites &times;2,
             Italian Cream Cake ($16.98), Twist Lemon-Lime / Dr. B / unsweetened cranberry-raspberry sparkling water 12-pks.
-            Amazon &mdash; Twilight &ldquo;I Love Boys Who Sparkle&rdquo; T-shirt, Jacob Black &ldquo;Loca Heart&rdquo; Twilight T-shirt,
+            Amazon - Twilight &ldquo;I Love Boys Who Sparkle&rdquo; T-shirt, Jacob Black &ldquo;Loca Heart&rdquo; Twilight T-shirt,
             sage green scalloped disposable tableware set 175-pc.</li>
         </ul>
 
-        <h3 style="font-size: 12px; font-weight: bold; margin: 14px 0 6px;">Jedding (Jester Wedding) &mdash; April 10, 2026</h3>
-        <p>The marquee farewell event of the year &mdash; a formal wedding ceremony between Jester East&rsquo;s phoenix mascot
+        <h3 style="font-size: 12px; font-weight: bold; margin: 14px 0 6px;">Jedding (Jester Wedding) - April 10, 2026</h3>
+        <p>The marquee farewell event of the year - a formal wedding ceremony between Jester East&rsquo;s phoenix mascot
           and Jester West&rsquo;s dragon mascot, held at the Jester Plaza (with Jester Auditorium as a weather backup).
           The event included a formal ceremony with a reception afterwards: catered pasta from UHD, punch and cake,
           a photobooth, and a card-writing station for residents to leave advice for future students.
@@ -2173,36 +2167,36 @@
         <ul>
           <li><strong>Leads:</strong> Mica, Austin, Erica, Vince</li>
           <li><strong>Campus Partner:</strong> JW RHC</li>
-          <li>Original date was April 3rd &mdash; moved to April 10th by vote</li>
+          <li>Original date was April 3rd - moved to April 10th by vote</li>
           <li><strong>Pre-event:</strong> Banner painted April 3 at 12 p.m.; floor reps disperse door flyers Monday;
             potential ceremony walk-through Wed/Thu prior. Vince met with Mark to discuss the altar moment (fist-bump? hug?).
             Mica coordinated with URHA on photobooth frame.</li>
-          <li><strong>Costume:</strong> Phoenix costume sourced (preferably inflatable) &mdash; backup plan: parrot decorated as phoenix.
+          <li><strong>Costume:</strong> Phoenix costume sourced (preferably inflatable) - backup plan: parrot decorated as phoenix.
             Quote secured for UHD pasta catering.</li>
           <li><strong>Day-of:</strong> signup shifts via Teams. Funding requested from URHA on March 30/23.
             Budget aim: &lt; $1,000 each (East and West) depending on what each side purchased.</li>
         </ul>
 
-        <h3 style="font-size: 12px; font-weight: bold; margin: 14px 0 6px;">Slime &amp; Study &mdash; April 15, 2026</h3>
+        <h3 style="font-size: 12px; font-weight: bold; margin: 14px 0 6px;">Slime &amp; Study - April 15, 2026</h3>
         <p>Slime-making event in the Red River Lounge from 5:30&ndash;6:30 p.m.</p>
         <ul>
           <li><strong>Leads:</strong> Austin, Zoe</li>
-          <li><strong>Cost:</strong> $90.57 (Amazon) &mdash; 1 gallon all-purpose glue &times;2,
+          <li><strong>Cost:</strong> $90.57 (Amazon) - 1 gallon all-purpose glue &times;2,
             8 oz disposable plastic storage containers 40-ct, 12 oz saline solution 2-ct, 14.9 oz shaving cream &times;2,
             16 oz baking soda, popsicle stirring sticks 100-ct, food coloring (red/yellow/green/blue), essential oils,
             8-count disposable plastic table cloth.</li>
         </ul>
 
-        <h3 style="font-size: 12px; font-weight: bold; margin: 14px 0 6px;">Jester Jollapalooza &mdash; April 16, 2026</h3>
+        <h3 style="font-size: 12px; font-weight: bold; margin: 14px 0 6px;">Jester Jollapalooza - April 16, 2026</h3>
         <p>A joint East-West RA-planned event from 7&ndash;9 p.m. The RHC sought volunteers; Katres shared a sign-up at the 3.12 meeting.</p>
 
-        <h3 style="font-size: 12px; font-weight: bold; margin: 14px 0 6px;">Student Leadership Celebration &mdash; April 14, 2026 (6:30&ndash;8 p.m.)</h3>
+        <h3 style="font-size: 12px; font-weight: bold; margin: 14px 0 6px;">Student Leadership Celebration - April 14, 2026 (6:30&ndash;8 p.m.)</h3>
         <p>Held at San Jac MPR with food, awards, and NRHH induction (open to everyone). Spring Forward was nominated for an OTM by Austin.</p>
 
-        <h3 style="font-size: 12px; font-weight: bold; margin: 14px 0 6px;">Ponyo &amp; Ramen &mdash; April 8, 2026 (Cancelled)</h3>
+        <h3 style="font-size: 12px; font-weight: bold; margin: 14px 0 6px;">Ponyo &amp; Ramen - April 8, 2026 (Cancelled)</h3>
         <p>Originally planned for April 8 in the Red River Lounge at 6 p.m. with Katres and Carmen as leads.</p>
 
-        <h3 style="font-size: 12px; font-weight: bold; margin: 14px 0 6px;">Sustainability Event &mdash; Changed to Slime Event</h3>
+        <h3 style="font-size: 12px; font-weight: bold; margin: 14px 0 6px;">Sustainability Event - Changed to Slime Event</h3>
         <p>A planned sustainability event by Austin and Vince was changed to a slime event during the 3.26 meeting.</p>
 
         <hr class="sep" />
@@ -2221,9 +2215,9 @@
             <tr><td>Nov 7</td><td>Wicked</td><td>$172.55, 45 attendees</td></tr>
             <tr><td>Nov 15</td><td>Kpop Demon Hunters</td><td>$90.92, 78 attendees</td></tr>
             <tr><td>Dec 5</td><td>Holiday Movie / &ldquo;Whoville&rdquo; with hot cocoa</td><td>$0 incremental, 65 attendees</td></tr>
-            <tr><td>Jan 23</td><td>Twilight</td><td>&mdash;</td></tr>
-            <tr><td>Jan 30</td><td>Twilight (full cinema-style)</td><td>&mdash;</td></tr>
-            <tr><td>Feb 5</td><td>10 Things I Hate About You</td><td>&mdash;</td></tr>
+            <tr><td>Jan 23</td><td>Twilight</td><td>-</td></tr>
+            <tr><td>Jan 30</td><td>Twilight (full cinema-style)</td><td>-</td></tr>
+            <tr><td>Feb 5</td><td>10 Things I Hate About You</td><td>-</td></tr>
             <tr><td>Feb 13</td><td>Scary Movie 4</td><td>Erica, Austin</td></tr>
             <tr><td>Feb 20</td><td>Princess Bride</td><td>Keira</td></tr>
             <tr><td>Feb 27</td><td>The Notebook</td><td>Prisha, Erica, Katres</td></tr>
@@ -2232,7 +2226,7 @@
             <tr><td>Mar 27</td><td>Shark Tales?</td><td>Keira, Carmen</td></tr>
             <tr><td>Apr 1</td><td>Bottoms</td><td>FRF prepared, marked &ldquo;did not use&rdquo;</td></tr>
             <tr><td>Apr 17</td><td>Camp Rock</td><td>Keira</td></tr>
-            <tr><td>Apr 24</td><td>The Devil Wears Prada</td><td>&mdash;</td></tr>
+            <tr><td>Apr 24</td><td>The Devil Wears Prada</td><td>-</td></tr>
           </tbody>
         </table>
 
@@ -2250,66 +2244,57 @@
         </header>
 
         <h2 class="section">Master Events Table</h2>
-        <p class="lede">All recorded programs, sorted chronologically. Cost figures are from the FRF totals or the master Event Calendar &mdash; where they differ, both are noted.</p>
+        <p class="lede">All recorded programs, sorted chronologically. Cost figures are from the FRF totals or the master Event Calendar - where they differ, both are noted.</p>
         <table class="data">
-          <thead><tr><th>Event</th><th>Date</th><th>Cost</th><th>Attend.</th><th>Lead(s)</th></tr></thead>
-          <tbody>
-            <tr><td>Aloe! From Hall Council</td><td>Aug 27, 2025</td><td>$563.50</td><td>120</td><td>Katres, Rotem</td></tr>
-            <tr><td>Jester United / RHC Retreat</td><td>Oct 19, 2025</td><td>$443.10</td><td>20</td><td>Katres, Rotem</td></tr>
-            <tr><td>HallowEast Movie Night (Coraline)</td><td>Oct 24, 2025</td><td>$61.69</td><td>27</td><td>Julian, Erica</td></tr>
-            <tr><td>HallowEast Costume Contest</td><td>Oct 25, 2025</td><td>$178.75</td><td>72</td><td>Selena, Erica</td></tr>
-            <tr><td>Rock the Pink (URHA)</td><td>Oct 28, 2025</td><td>$0 + $511.62 URHA</td><td>350</td><td>Mica, Austin</td></tr>
-            <tr><td>Jessence Distribution PO</td><td>Oct 28, 2025</td><td>$72.70</td><td>&mdash;</td><td>TPC</td></tr>
-            <tr><td>Jester Towers of Terror (vol.)</td><td>Oct 29, 2025</td><td>&mdash;</td><td>&mdash;</td><td>RAs (RHC vols)</td></tr>
-            <tr><td>D&iacute;a de los Muertos</td><td>Nov 2, 2025</td><td>$274.08</td><td>342</td><td>Katres</td></tr>
-            <tr><td>Wicked Movie Night</td><td>Nov 7, 2025</td><td>$172.55</td><td>45</td><td>Austin, Kayla</td></tr>
-            <tr><td>Kpop Demon Hunters Movie</td><td>Nov 15, 2025</td><td>$90.92</td><td>78</td><td>Mica, Zoe</td></tr>
-            <tr><td>A Little Library</td><td>Nov 15, 2025</td><td>$96.92</td><td>&mdash;</td><td>C3</td></tr>
-            <tr><td>Fuel for Finals</td><td>Nov 17, 2025</td><td>$427.09</td><td>112</td><td>Mica, Alejandra</td></tr>
-            <tr><td>Mega-Mindfulness / Megamind</td><td>Nov 19, 2025</td><td>$190.44</td><td>22</td><td>Kayla, Abhishek</td></tr>
-            <tr><td>TPC Purchase Order</td><td>Nov 5, 2025</td><td>$173.88</td><td>&mdash;</td><td>TPC (Erica)</td></tr>
-            <tr><td>Colors &amp; Connection</td><td>Dec 2, 2025</td><td>$374.34</td><td>36</td><td>Nicole Wu</td></tr>
-            <tr><td>Cookie Decorating</td><td>Dec 3, 2025</td><td>$97.74</td><td>&mdash;</td><td>Selena, Maggie</td></tr>
-            <tr><td>Gingerbread House Decor</td><td>Dec 3, 2025</td><td>(part of cookie/$90)</td><td>90</td><td>Selena, Maggie</td></tr>
-            <tr><td>Trail of Lights (JUnited)</td><td>Dec 4, 2025</td><td>$985.66</td><td>372</td><td>Katres+ team</td></tr>
+          <thead><tr><th>Event</th><th>Date</th><th>Cost</th><th>Attend.</th><th>People involved</th></tr></thead>
+                    <tbody>
+            <tr><td>Aloe! From Hall Council</td><td>Aug 27, 2025</td><td>$563.50</td><td>120</td><td>Katres, Rotem, Thang, Jaylen, Colin, Gibby, Jake</td></tr>
+            <tr><td>Jester United / RHC Retreat</td><td>Oct 19, 2025</td><td>$443.10</td><td>20</td><td>Katres, Rotem, RA Liaisons</td></tr>
+            <tr><td>HallowEast Movie Night (Coraline)</td><td>Oct 24, 2025</td><td>$61.69</td><td>27</td><td>Julian, Erica, Kayla, Zoe</td></tr>
+            <tr><td>HallowEast Costume Contest</td><td>Oct 25, 2025</td><td>$178.75</td><td>72</td><td>Selena, Erica, Kayla, Zoe</td></tr>
+            <tr><td>Rock the Pink (URHA)</td><td>Oct 28, 2025</td><td>$0 + $511.62 URHA</td><td>350</td><td>Mica, Austin, Keira, Zoe, Kayla, Abhishek, Brooke, Julian</td></tr>
+            <tr><td>Jessence Distribution PO</td><td>Oct 28, 2025</td><td>$72.70</td><td>-</td><td>TPC (Erica + committee)</td></tr>
+            <tr><td>Jester Towers of Terror (vol.)</td><td>Oct 29, 2025</td><td>-</td><td>-</td><td>RAs; RHC volunteers: Keira, Kayla, Erica, Mica, Selena</td></tr>
+            <tr><td>D&iacute;a de los Muertos</td><td>Nov 2, 2025</td><td>$274.08</td><td>342</td><td>Katres, Zoe, Austin, Brooke, Vince, Medha</td></tr>
+            <tr><td>Wicked Movie Night</td><td>Nov 7, 2025</td><td>$172.55</td><td>45</td><td>Austin, Kayla, Katres, Erica, Rayyan, Maggie, Brooke, Selena, Abhishek</td></tr>
+            <tr><td>Kpop Demon Hunters Movie</td><td>Nov 15, 2025</td><td>$90.92</td><td>78</td><td>Mica, Zoe, Kayla</td></tr>
+            <tr><td>A Little Library</td><td>Nov 15, 2025</td><td>$96.92</td><td>-</td><td>C3 (Keira, Zoe + committee)</td></tr>
+            <tr><td>Fuel for Finals</td><td>Nov 17, 2025</td><td>$427.09</td><td>112</td><td>Mica, Alejandra, Kayla, Brooke, Selena, Abhishek</td></tr>
+            <tr><td>Mega-Mindfulness / Megamind</td><td>Nov 19, 2025</td><td>$190.44</td><td>22</td><td>Kayla, Abhishek, Keira</td></tr>
+            <tr><td>TPC Purchase Order</td><td>Nov 5, 2025</td><td>$173.88</td><td>-</td><td>TPC (Erica + committee)</td></tr>
+            <tr><td>Colors &amp; Connection</td><td>Dec 2, 2025</td><td>$374.34</td><td>36</td><td>Nicole Wu, Kayla, Keira</td></tr>
+            <tr><td>Cookie Decorating</td><td>Dec 3, 2025</td><td>$97.74</td><td>-</td><td>Selena, Maggie, Layla, Vince</td></tr>
+            <tr><td>Gingerbread House Decor</td><td>Dec 3, 2025</td><td>(part of cookie/$90)</td><td>90</td><td>Selena, Maggie, Layla, Vince</td></tr>
+            <tr><td>Trail of Lights (JUnited)</td><td>Dec 4, 2025</td><td>$985.66</td><td>372</td><td>Katres, Alejandra, Keira, Erica + entire council (all setup &amp; ran)</td></tr>
             <tr><td>Holiday Movie Night (Whoville)</td><td>Dec 5, 2025</td><td>$0</td><td>65</td><td>Kayla, Vince</td></tr>
             <tr><td>Ornament Decorating</td><td>Dec 8, 2025</td><td>$97.01</td><td>54</td><td>Navya, Brooke</td></tr>
-            <tr><td>Jester Formal (Jormal)</td><td>Jan 15, 2026</td><td>URHA-funded</td><td>&mdash;</td><td>Vince</td></tr>
-            <tr><td>Red River Cinema: Twilight</td><td>Jan 30, 2026</td><td>$89.61</td><td>&mdash;</td><td>Erica, Zoe</td></tr>
-            <tr><td>RRC: 10 Things I Hate About You</td><td>Feb 5, 2026</td><td>&mdash;</td><td>&mdash;</td><td>Erica, Austin</td></tr>
-            <tr><td>Bunches of Love</td><td>Feb 10, 2026</td><td>&mdash;</td><td>&mdash;</td><td>Keira</td></tr>
-            <tr><td>Baked with Love</td><td>Feb 11, 2026</td><td>$179.39</td><td>&mdash;</td><td>Maggie, Selena</td></tr>
-            <tr><td>RRC: Scary Movie 4</td><td>Feb 13, 2026</td><td>&mdash;</td><td>&mdash;</td><td>Erica, Austin</td></tr>
-            <tr><td>Donation Drive</td><td>Feb 19, 2026</td><td>$28.98</td><td>&mdash;</td><td>Vince/Abhishek</td></tr>
-            <tr><td>RRC: Princess Bride</td><td>Feb 20, 2026</td><td>&mdash;</td><td>&mdash;</td><td>Keira</td></tr>
-            <tr><td>RRC: The Notebook</td><td>Feb 27, 2026</td><td>&mdash;</td><td>&mdash;</td><td>Prisha, Erica, Katres</td></tr>
-            <tr><td>RRC: Rio / Pitch Perfect</td><td>Mar 6, 2026</td><td>&mdash;</td><td>&mdash;</td><td>Alejandra, Keira</td></tr>
-            <tr><td>Spring Forward</td><td>Mar 9, 2026</td><td>$364.45</td><td>&mdash;</td><td>Mica, Keira, Vince, Austin</td></tr>
-            <tr><td>Lucky Charms</td><td>Mar 11, 2026</td><td>$99.58</td><td>&mdash;</td><td>Keira</td></tr>
-            <tr><td>RRC: Sinners</td><td>Mar 12, 2026</td><td>$9.99</td><td>&mdash;</td><td>Mica, Kayla, Austin</td></tr>
-            <tr><td>Spring into the Season</td><td>Mar 24, 2026</td><td>&mdash;</td><td>&mdash;</td><td>Alejandra, Mica, Navya</td></tr>
-            <tr><td>Egg Hunt</td><td>Mar 25, 2026</td><td>&mdash;</td><td>&mdash;</td><td>Abhishek, Carmen</td></tr>
-            <tr><td>RRC: Shark Tales?</td><td>Mar 27, 2026</td><td>&mdash;</td><td>&mdash;</td><td>Keira, Carmen</td></tr>
-            <tr><td>RRC: Bottoms (did not use FRF)</td><td>Apr 1, 2026</td><td>$73.59 (planned)</td><td>&mdash;</td><td>Mica, Zoe, Carmen</td></tr>
-            <tr><td>Twilight Marathon (week)</td><td>Apr 7&ndash;10, 2026</td><td>$221.53</td><td>&mdash;</td><td>Navya, Erica</td></tr>
-            <tr><td>Jedding (Jester Wedding)</td><td>Apr 10, 2026</td><td>&lt;$1k each + URHA</td><td>&mdash;</td><td>Mica, Austin, Erica, Vince</td></tr>
-            <tr><td>Student Leadership Celebration</td><td>Apr 14, 2026</td><td>&mdash;</td><td>&mdash;</td><td>URHA/All</td></tr>
-            <tr><td>Slime &amp; Study</td><td>Apr 15, 2026</td><td>$90.57</td><td>&mdash;</td><td>Austin, Zoe</td></tr>
-            <tr><td>Jester Jollapalooza (RA-planned)</td><td>Apr 16, 2026</td><td>&mdash;</td><td>&mdash;</td><td>RAs (RHC vols)</td></tr>
-            <tr><td>Ponyo &amp; Ramen (Cancelled)</td><td>Apr 8, 2026</td><td>&mdash;</td><td>&mdash;</td><td>Katres, Carmen</td></tr>
+            <tr><td>Jester Formal (Jormal)</td><td>Jan 15, 2026</td><td>URHA-funded</td><td>-</td><td>Vince, Mica, Manoj (URHA presentation), JW RHC</td></tr>
+            <tr><td>Red River Cinema: Twilight</td><td>Jan 30, 2026</td><td>$89.61</td><td>-</td><td>Erica, Zoe</td></tr>
+            <tr><td>RRC: 10 Things I Hate About You</td><td>Feb 5, 2026</td><td>-</td><td>-</td><td>Erica, Austin</td></tr>
+            <tr><td>Bunches of Love</td><td>Feb 10, 2026</td><td>-</td><td>-</td><td>Keira, Layla</td></tr>
+            <tr><td>Baked with Love</td><td>Feb 11, 2026</td><td>$179.39</td><td>-</td><td>Maggie, Selena</td></tr>
+            <tr><td>RRC: Scary Movie 4</td><td>Feb 13, 2026</td><td>-</td><td>-</td><td>Erica, Austin</td></tr>
+            <tr><td>Donation Drive</td><td>Feb 19, 2026</td><td>$28.98</td><td>-</td><td>Vince, Abhishek</td></tr>
+            <tr><td>RRC: Princess Bride</td><td>Feb 20, 2026</td><td>-</td><td>-</td><td>Keira</td></tr>
+            <tr><td>RRC: The Notebook</td><td>Feb 27, 2026</td><td>-</td><td>-</td><td>Prisha, Erica, Katres</td></tr>
+            <tr><td>RRC: Rio / Pitch Perfect</td><td>Mar 6, 2026</td><td>-</td><td>-</td><td>Alejandra, Keira</td></tr>
+            <tr><td>Spring Forward</td><td>Mar 9, 2026</td><td>$364.45</td><td>-</td><td>Mica, Keira, Vince, Austin</td></tr>
+            <tr><td>Lucky Charms</td><td>Mar 11, 2026</td><td>$99.58</td><td>-</td><td>Keira, Leon, Karim, Austin</td></tr>
+            <tr><td>RRC: Sinners</td><td>Mar 12, 2026</td><td>$9.99</td><td>-</td><td>Mica, Kayla, Austin</td></tr>
+            <tr><td>Spring into the Season</td><td>Mar 24, 2026</td><td>-</td><td>-</td><td>Alejandra, Mica, Navya, Carmen, Katres</td></tr>
+            <tr><td>Egg Hunt</td><td>Mar 25, 2026</td><td>-</td><td>-</td><td>Abhishek, Erica, Leon, Carmen, URHA (Adam)</td></tr>
+            <tr><td>RRC: Shark Tales?</td><td>Mar 27, 2026</td><td>-</td><td>-</td><td>Keira, Carmen</td></tr>
+            <tr><td>RRC: Bottoms (did not use FRF)</td><td>Apr 1, 2026</td><td>$73.59 (planned)</td><td>-</td><td>Mica, Zoe, Carmen</td></tr>
+            <tr><td>Twilight Marathon (week)</td><td>Apr 7-10, 2026</td><td>$221.53</td><td>-</td><td>Navya, Erica, URHA</td></tr>
+            <tr><td>Jedding (Jester Wedding)</td><td>Apr 10, 2026</td><td>&lt;$1k each + URHA</td><td>-</td><td>Mica, Austin, Erica, Vince, Mark, JW RHC, URHA</td></tr>
+            <tr><td>Student Leadership Celebration</td><td>Apr 14, 2026</td><td>-</td><td>-</td><td>URHA, all council</td></tr>
+            <tr><td>Slime &amp; Study</td><td>Apr 15, 2026</td><td>$90.57</td><td>-</td><td>Austin, Zoe</td></tr>
+            <tr><td>Jester Jollapalooza (RA-planned)</td><td>Apr 16, 2026</td><td>-</td><td>-</td><td>RAs; RHC volunteers (Katres signup)</td></tr>
+            <tr><td>Ponyo &amp; Ramen (Cancelled)</td><td>Apr 8, 2026</td><td>-</td><td>-</td><td>Katres, Carmen</td></tr>
           </tbody>
         </table>
 
         <hr class="sep" />
-
-        <h2 class="section">Year-Start Budget &amp; Funding Notes</h2>
-        <p>Jester East RHC&rsquo;s annual programming budget was approximately <strong>$12,000</strong> for the 2025&ndash;2026 academic year,
-          compared to Jester West&rsquo;s ~$17,000. On October 17, Katres announced &ldquo;Budget increased by $159.00!&rdquo;
-          Across the year, large discretionary contributions included approximately <strong>$700 toward shared capital equipment</strong>
-          (new TV + projector/screen for the Red River Lounge), and an offer of <strong>$250 toward Jester West&rsquo;s PS5 purchase request</strong>
-          (with the suggestion they apply for URHA funding for the rest).</p>
-        <p>By the spring (3.5 meeting), Katres reported <strong>&ldquo;$959 left for programming&rdquo;</strong>
-          &mdash; i.e., the council had already deployed the vast majority of its programming dollars by early March.</p>
 
         <h2 class="section">Master FRF Table</h2>
         <p>Below is every Funding Request Form (FRF) on file for the year, in approximate chronological order.</p>
@@ -2357,31 +2342,32 @@
 
         <h2 class="section">Notable Capital / Equipment Purchases</h2>
         <ul>
-          <li><strong>New 85-inch 4K Samsung TV</strong> &mdash; ordered for the TV Lounge, installed via UT IT (Oct 2025).</li>
+          <li><strong>Annual T-shirt order</strong> ($2,700) - council apparel ordered for the year.</li>
+          <li><strong>New 85-inch 4K Samsung TV</strong> - ordered for the TV Lounge, installed via UT IT (Oct 2025).</li>
           <li><strong>Aoxun 120-inch Motorized Projector Screen</strong> ($149.99) + Command Small Refill Adhesive Strips ($6.40)
-            &mdash; for the Red River Lounge &ldquo;Screen Unveiling&rdquo; Oct 13, 2025. Installation required ceiling drilling and director-level approval.</li>
+            - for the Red River Lounge &ldquo;Screen Unveiling&rdquo; Oct 13, 2025. Installation required ceiling drilling and director-level approval.</li>
           <li><strong>Farberware Countertop Microwave</strong> 1000W 1.3 Cu Ft ($119.99) + HOVER COVER Magnetic Splatter Cover ($19.99)
-            &mdash; for the JE kitchen, Oct 15, 2025.</li>
-          <li><strong>Piano-area lock initiative</strong> &mdash; driven by quiet-hours complaints. Multiple FRFs:
+            - for the JE kitchen, Oct 15, 2025.</li>
+          <li><strong>Piano-area lock initiative</strong> - driven by quiet-hours complaints. Multiple FRFs:
             Refrigerator Lock 2-pack + Command 20 lb XL Heavyweight Picture Hangers + Hook &amp; Loop Straps with Buckles ($30.97, Nov 3);
             piano-lock repair ($36.43 in HEB, Feb 20); NeoPRO Generic Piano Lock Key ($18.99, Mar 2). Also a written proposal to build doors over the piano area.</li>
           <li><strong>Hoctieon 6-Tier Tree Bookshelf</strong> for the Little Free Library ($34.99, Nov 15).</li>
-          <li><strong>48-pc round floor pillows</strong> for movie nights ($95.99 &mdash; part of Wicked FRF).</li>
+          <li><strong>48-pc round floor pillows</strong> for movie nights ($95.99 - part of Wicked FRF).</li>
           <li><strong>Fujifilm Instax Mini 12 Instant Film Camera</strong> + 100-pk INSTAX Mini Instant Film &times;2 for Trail of Lights polaroid station (~$340).</li>
-          <li><strong>RA On-Call Supply purchases:</strong> phone chargers 2-pack ($29.97); kitchen supplies &mdash; Matter compostable kitchen items &times;2,
+          <li><strong>RA On-Call Supply purchases:</strong> phone chargers 2-pack ($29.97); kitchen supplies - Matter compostable kitchen items &times;2,
             Ohuhu over-the-sink dish drainer, Aux to USB-C cable ($86.96, Feb 2).</li>
         </ul>
 
         <h2 class="section">URHA / Collaborative Funding Highlights</h2>
         <ul>
-          <li><strong>Rock the Pink</strong> &mdash; URHA covered the entire $511.62 cost of JE RHC&rsquo;s Amazon items
+          <li><strong>Rock the Pink</strong> - URHA covered the entire $511.62 cost of JE RHC&rsquo;s Amazon items
             (&ldquo;$0 + $563.62 URHA&rdquo; per event calendar).</li>
-          <li><strong>Jester Formal (Jormal)</strong> &mdash; proposal approved up to director level,
+          <li><strong>Jester Formal (Jormal)</strong> - proposal approved up to director level,
             presented to URHA Eboard by Mica and Manoj on Wednesday in late fall, received URHA collaborative funding.</li>
-          <li><strong>Twilight Marathon</strong> &mdash; Erica reached out to URHA for extra funding.</li>
-          <li><strong>Jedding</strong> &mdash; URHA funding requested March 30/23. Photobooth frame coordinated with URHA.</li>
-          <li><strong>Egg Hunt</strong> &mdash; URHA helped pay for decorations and helped with setup as thanks for letting events overlap with their OTM writing party.</li>
-          <li><strong>RA programming line</strong> &mdash; $2,000 allocated for the year (decided at the 9/26 meeting).</li>
+          <li><strong>Twilight Marathon</strong> - Erica reached out to URHA for extra funding.</li>
+          <li><strong>Jedding</strong> - URHA funding requested March 30/23. Photobooth frame coordinated with URHA.</li>
+          <li><strong>Egg Hunt</strong> - URHA helped pay for decorations and helped with setup as thanks for letting events overlap with their OTM writing party.</li>
+          <li><strong>RA programming line</strong> - $2,000 allocated for the year (decided at the 9/26 meeting).</li>
         </ul>
       </section>
 
@@ -2412,9 +2398,9 @@
 
         <hr class="sep" />
 
-        <h2 class="section">Fall 2025 &mdash; Meeting-by-Meeting Highlights</h2>
+        <h2 class="section">Fall 2025 - Meeting-by-Meeting Highlights</h2>
 
-        <h3 style="font-size: 12px; font-weight: bold; margin: 14px 0 6px;">September 19 &mdash; Founding meeting</h3>
+        <h3 style="font-size: 12px; font-weight: bold; margin: 14px 0 6px;">September 19 - Founding meeting</h3>
         <ul>
           <li>Constitution overview and ratification (approved unanimously).</li>
           <li>Committee structure established: TPC, P3, Social Media, +.</li>
@@ -2429,7 +2415,7 @@
           <li>Reviewed event calendar; allocated $2,000 for RA programming.</li>
           <li>RHC retreat scheduled October 19 (head count to follow).</li>
           <li>Towers of Terror volunteer signup (Keira, Kayla, Erica, Mica, Selena).</li>
-          <li>Created monthly email newsletter &mdash; Alejandra volunteered.</li>
+          <li>Created monthly email newsletter - Alejandra volunteered.</li>
           <li>Decision: contribute ~$700 toward new TV + projector/screen.</li>
           <li>JW RHC asked JE to help fund a PS5; JE offered $250, recommended URHA funding for the rest.</li>
           <li>NRHH and professional-development workshop information shared.</li>
@@ -2451,7 +2437,7 @@
           <li>Both senators and Katres absent that day; Rotem covered.</li>
           <li>FRFs approved for October events.</li>
           <li>New 85&Prime; 4K Samsung TV ordered for TV Lounge.</li>
-          <li>Projector screen idea snagged on drilling approval &mdash; collapsible screen used in interim.</li>
+          <li>Projector screen idea snagged on drilling approval - collapsible screen used in interim.</li>
           <li>TV Lounge + Red River reserved for movie night; Plaza for costume contest.</li>
           <li>Mica: HornsLink invites; check email for HornsLink invitation.</li>
           <li>Day-of logistics for Rock the Pink due October 14.</li>
@@ -2464,7 +2450,7 @@
           <li>Introductions: Kyle (URHA Board Buddy), Vince (Director of Sustainability).</li>
           <li>Projector screen installation officially approved.</li>
           <li>Discussion about Farmers Fridge in JE and the Patio Lounge access issue (no access after midnight for J-East).</li>
-          <li>Resource Handbook for residents &mdash; centralized resource list.</li>
+          <li>Resource Handbook for residents - centralized resource list.</li>
           <li>Residential Leadership Conference interest (Nov 21&ndash;23).</li>
           <li>D&iacute;a de los Muertos plan (set up ofrenda Oct 31, food/music night Nov 2nd).</li>
           <li>Snoopy themed November boards; C3 PO vote scheduled next time.</li>
@@ -2476,10 +2462,10 @@
         <ul>
           <li>FRF for Day of the Dead approved by vote.</li>
           <li>Projector screen here, can use for Coraline.</li>
-          <li>Proposal: weekly movie nights with free popcorn (popcorn machine) &mdash; &ldquo;low cost/effort, effective community building.&rdquo;</li>
-          <li>Movie scheduling: Nov 7 (Austin/Kayla &mdash; Wicked), Dec 5 (Mica/Zoe &mdash; KPDH or Christmas).</li>
+          <li>Proposal: weekly movie nights with free popcorn (popcorn machine) - &ldquo;low cost/effort, effective community building.&rdquo;</li>
+          <li>Movie scheduling: Nov 7 (Austin/Kayla - Wicked), Dec 5 (Mica/Zoe - KPDH or Christmas).</li>
           <li>Idea floated: Little Free Library for C3 (&ldquo;I know where we can get books! Just need a shelf/signage&rdquo;).</li>
-          <li>Patio Lounge after-midnight access &mdash; declined.</li>
+          <li>Patio Lounge after-midnight access - declined.</li>
           <li>Piano complaints (too loud, used during quiet hours): piano lock, doors, roping off proposed.</li>
           <li>Trail of Lights and Jormal planning. Once vision/FRF in hand, request collaborative URHA funds (sooner the better).</li>
         </ul>
@@ -2487,23 +2473,23 @@
         <h3 style="font-size: 12px; font-weight: bold; margin: 14px 0 6px;">October 31 (Halloween!)</h3>
         <ul>
           <li>Prodevo: claim UT email; Office365 management.</li>
-          <li>PS5 update &mdash; Jester West will maybe buy in March.</li>
+          <li>PS5 update - Jester West will maybe buy in March.</li>
           <li>Resource booklet placed at front desks.</li>
           <li>Reminder: event proposals must be in Roompact 10 days before event date.</li>
           <li>Event proposal tutorial.</li>
           <li>Rock the Pink retro: &ldquo;Residents liked it, good turnout, good messaging, compliments from peers, amazing banner.&rdquo;</li>
           <li>Brainstorming East vs West field-day competition (sports, trivia, dance-off, Olympics tournament).</li>
-          <li>D&iacute;a de los Muertos Sunday &mdash; set up ofrenda today.</li>
+          <li>D&iacute;a de los Muertos Sunday - set up ofrenda today.</li>
         </ul>
 
         <h3 style="font-size: 12px; font-weight: bold; margin: 14px 0 6px;">November 7</h3>
         <ul>
           <li>Educational component to movie nights (&ldquo;university under scrutiny rn, looking for excuses to pull $$&rdquo;).</li>
-          <li>Door for piano area &mdash; proposal being written.</li>
+          <li>Door for piano area - proposal being written.</li>
           <li>Little Library Bookshelf is here, just needs to be built.</li>
           <li>Trail of Lights orders mostly arrived.</li>
           <li>Wicked Movie Night setup volunteers: Kayla, Katres, Austin, Erica, Rayyan, Maggie.</li>
-          <li>KPDH movie night next week &mdash; HEB run planned.</li>
+          <li>KPDH movie night next week - HEB run planned.</li>
         </ul>
 
         <h3 style="font-size: 12px; font-weight: bold; margin: 14px 0 6px;">November 14</h3>
@@ -2516,26 +2502,26 @@
           <li>Trail of Lights scheduling.</li>
           <li>Daily Texan article reference.</li>
           <li>Jormal update.</li>
-          <li>Senator updates: Leadership Development / Longhorns Listen &mdash; Suicide Prevention Training Tuesday Nov 18 at Jester Fireplace Lounge (dinner provided).</li>
+          <li>Senator updates: Leadership Development / Longhorns Listen - Suicide Prevention Training Tuesday Nov 18 at Jester Fireplace Lounge (dinner provided).</li>
           <li>Programming: Ramyeon and Demon Hunters tonight; Fuel for Finals on Monday; Cookie Decor; Colors and Connections coming up.</li>
         </ul>
 
         <h3 style="font-size: 12px; font-weight: bold; margin: 14px 0 6px;">December 5 (final fall meeting)</h3>
         <ul>
-          <li>Trail of Lights yesterday &mdash; &ldquo;important folks in UHD&rdquo; stopped by impressed.</li>
+          <li>Trail of Lights yesterday - &ldquo;important folks in UHD&rdquo; stopped by impressed.</li>
           <li>Jormal: Enchanted Forest theme proposal fully approved up to director level; Mica and Manoj presented to URHA Eboard and got funding.</li>
           <li>Resource room expectations reiterated: never alone, basic upkeep, no event-supply storage there, ask Mireya for refills,
             use only when actively using items, not for studying or lounging. Looking for additional spaces for JE RHC.</li>
-          <li>Roompact access issue &mdash; IT working on resolution.</li>
+          <li>Roompact access issue - IT working on resolution.</li>
           <li>Thang departing for UTLA opportunity in spring (congrats!).</li>
           <li>Whoville and Hot Cocoa movie tonight; Ornament Decorating on Monday.</li>
         </ul>
 
         <hr class="sep" />
 
-        <h2 class="section">Spring 2026 &mdash; Meeting-by-Meeting Highlights</h2>
+        <h2 class="section">Spring 2026 - Meeting-by-Meeting Highlights</h2>
 
-        <h3 style="font-size: 12px; font-weight: bold; margin: 14px 0 6px;">January 22 &mdash; Spring kickoff</h3>
+        <h3 style="font-size: 12px; font-weight: bold; margin: 14px 0 6px;">January 22 - Spring kickoff</h3>
         <ul>
           <li>Jester East won an OTM award for Red River Cinema!</li>
           <li>Jester Formal was a huge hit; first UHD event of 2026.</li>
@@ -2543,17 +2529,17 @@
           <li>Working on cleaner for popcorn machine.</li>
           <li>HornsLink completed thanks to all.</li>
           <li>URHA Exec Board Applications open; virtual info session Friday Jan 23.</li>
-          <li>Erica won an OTM at the national level &mdash; First Year Student of the Month!</li>
-          <li>Bunches of Love planning. Red River Cinema scheduling. Jedding &mdash; JW RHC working with us.
+          <li>Erica won an OTM at the national level - First Year Student of the Month!</li>
+          <li>Bunches of Love planning. Red River Cinema scheduling. Jedding - JW RHC working with us.
             East vs West Olympics? Other Feb event ideas: cookie decorating.</li>
-          <li>Floor reps Selena, Vince, Brooke, Rayyan, Layla &mdash; please add yourselves to events.</li>
+          <li>Floor reps Selena, Vince, Brooke, Rayyan, Layla - please add yourselves to events.</li>
           <li>Katres: make a JEast RHC company listing on LinkedIn; check IT on Roompact access.</li>
         </ul>
 
         <h3 style="font-size: 12px; font-weight: bold; margin: 14px 0 6px;">January 29</h3>
         <ul>
           <li>URHA wanted to host an OTM writing party on Egg Hunt day; Katres reserved space; URHA offered to help purchase decorations.</li>
-          <li>One event on calendar overlapped with movie night (a typo) &mdash; flagged in red.</li>
+          <li>One event on calendar overlapped with movie night (a typo) - flagged in red.</li>
           <li>Roompact access working for everyone except Navya.</li>
           <li>Reminder: event proposal must be submitted 10 days before event.</li>
           <li>Mica/Austin: Think about FRFs for movie nights; URHA Board elections open.</li>
@@ -2571,7 +2557,7 @@
           <li>URHA Phase 2 applications due Feb 10. Panel: &ldquo;From Imposter to Empowered&rdquo; (TALPA) Feb 9.</li>
           <li>Jedding planning meeting tomorrow 5&ndash;6 p.m.</li>
           <li>Programming: 10 Things I Hate About U happening that night; Bunches of Love next Tuesday;
-            Cookie Decor next Wednesday; Vince &mdash; food drive.</li>
+            Cookie Decor next Wednesday; Vince - food drive.</li>
         </ul>
 
         <h3 style="font-size: 12px; font-weight: bold; margin: 14px 0 6px;">February 13</h3>
@@ -2580,7 +2566,7 @@
           <li>LLC Peer Leader hiring open for 2026&ndash;27 ($800 Dine-In Dollars/year).</li>
           <li>URHA cool events coming up.</li>
           <li>TPC: condoms needed; refill next week; aprons coming; bedazzling planned. Budget $200 every two weeks.</li>
-          <li>Programming: Scary Movie 4 tomorrow; Jedding details &mdash; East/West met Feb 6 to begin planning.</li>
+          <li>Programming: Scary Movie 4 tomorrow; Jedding details - East/West met Feb 6 to begin planning.</li>
           <li>Jedding: Date TBD, aiming April 3 or 10. Theme: Royalty. Budget &lt; $1,000 each. Phoenix costume sourced.
             UHD pasta catering quote. Photobooth frame from URHA. Erica designed sketch.</li>
         </ul>
@@ -2592,15 +2578,15 @@
           <li>Tips for improving flyers presentation (Katres&rsquo; powerpoint): simplicity, clear objective, date/time,
             post near elevators/doors/online/newsletters, monochrome, promote 3 weeks out.</li>
           <li>TPC: refills complete; new baskets; website by Erica created (request forms, layout maps); Wednesdays 3 p.m.</li>
-          <li>Programming: Princess Bride tomorrow (Keira solo &mdash; help needed); Jedding meeting Feb 20, 5&ndash;6 p.m.</li>
+          <li>Programming: Princess Bride tomorrow (Keira solo - help needed); Jedding meeting Feb 20, 5&ndash;6 p.m.</li>
         </ul>
 
         <h3 style="font-size: 12px; font-weight: bold; margin: 14px 0 6px;">February 26</h3>
         <ul>
           <li>Welcomed RA Liaison Sam and Floor Reps Grant, Leon, Prisha.</li>
           <li>Social Media + RA Social Media merger to JEast Social Media.</li>
-          <li>Lucky Charms event conflicting with MAR10 &mdash; push back?</li>
-          <li>RRC low-attendance concerns &mdash; &ldquo;polling residents to gauge interest&rdquo; idea.</li>
+          <li>Lucky Charms event conflicting with MAR10 - push back?</li>
+          <li>RRC low-attendance concerns - &ldquo;polling residents to gauge interest&rdquo; idea.</li>
           <li>NRHH applications due Mar 13.</li>
           <li>URHA&rsquo;s Stop, Drop, and Give Thanks next Thursday 12&ndash;4 p.m. (dogs, letters, fun!).</li>
           <li>Adam (URHA board buddy) offered leadership development lessons at meetings.</li>
@@ -2629,8 +2615,8 @@
         <ul>
           <li>Name tags made (thanks Leon &amp; Maggie). Available in office.</li>
           <li>Quick vote ratified &ldquo;statement of compliance&rdquo; addition to constitution.</li>
-          <li>Jollapalooza April 16, 7&ndash;9 p.m. &mdash; volunteers needed.</li>
-          <li>Student Leadership Celebration April 14 at 6 p.m. &mdash; save the date.</li>
+          <li>Jollapalooza April 16, 7&ndash;9 p.m. - volunteers needed.</li>
+          <li>Student Leadership Celebration April 14 at 6 p.m. - save the date.</li>
           <li>URHA funding request planned March 30 or 23.</li>
           <li>Spring Forward successful.</li>
           <li>NRHH application due March 27.</li>
@@ -2651,7 +2637,7 @@
           <li>NRHH applications due tomorrow at 11:59 p.m.</li>
           <li>Programming: Jollapalooza volunteer signup sheet from Katres. Jedding date update.
             Clothing Drive (Abhishek): St. Vincent Donation April 20&ndash;May 1, prizes for donating (plushies, snacks, VIP event pass).
-            Twilight Wk status (Erica) &mdash; making each day special. Slime event (Austin/Zoe) replaces sustainability event.</li>
+            Twilight Wk status (Erica) - making each day special. Slime event (Austin/Zoe) replaces sustainability event.</li>
           <li>Kudos: Alejandra for Spring into the Szn help; Abhishek/Erica/Leon/Carmen for Egg Hunt.</li>
           <li>Exit ticket: nominate someone for Student Leadership Celebration.</li>
         </ul>
@@ -2664,23 +2650,31 @@
           <li>Wedding invites printed by Monday.</li>
           <li>Newsletter out today; Jedding love story promoting soon.</li>
           <li>C3 great update on board; TPC apron decorating next Wednesday.</li>
-          <li>Jedding Friday April 10 &mdash; sign up for shifts. Vince meet with Mark on altar moment.
+          <li>Jedding Friday April 10 - sign up for shifts. Vince meet with Mark on altar moment.
             Floor reps disperse door flyers Monday. Banner created tomorrow at noon. Costume worked on when materials arrive.</li>
         </ul>
 
         <h3 style="font-size: 12px; font-weight: bold; margin: 14px 0 6px;">April 9 (penultimate meeting)</h3>
         <ul>
           <li>No major advisor updates.</li>
-          <li>Student Leadership Celebration 4/14 6:30 p.m. San Jac MPR &mdash; please come, awards and food and fun.</li>
+          <li>Student Leadership Celebration 4/14 6:30 p.m. San Jac MPR - please come, awards and food and fun.</li>
           <li>TPC decorated aprons. Social Media: move-out themed TikToks (defrost fridge tutorial; ASMR slime making).</li>
           <li>Day 3 of Twilight Marathon today. Jedding tomorrow! Business casual + name tag.
             Slime &amp; Study next Wednesday 5:30&ndash;6:30 p.m. Red River Lounge. Jollapalooza next Thursday.</li>
+        </ul>
+
+        <h3 style="font-size: 12px; font-weight: bold; margin: 14px 0 6px;">April 23 (final meeting)</h3>
+        <ul>
+          <li>End-of-year celebration.</li>
+          <li>Cabo Bob&rsquo;s catered for the meeting.</li>
+          <li>Bevo plushies handed out to every council member.</li>
+          <li>RHC leadership certificates presented to every council member.</li>
         </ul>
       </section>
 
       <section class="panel" data-panel="rhc-recognition">
         <header class="page-h">
-          <h1>Recognition, Partners, &amp; Recommendations</h1>
+          <h1>Partners, Recognition, &amp; Future</h1>
           <div class="sub">Sponsors, awards, year-end notes, and recommendations for 2026&ndash;2027.</div>
         </header>
 
@@ -2689,7 +2683,7 @@
           <div class="gbox">
             <span class="gbox-title">Primary Funder</span>
             <strong>University Housing and Dining (UHD)</strong>
-            <p class="small" style="margin: 6px 0 0;">Primary funder of the council through departmental funds &mdash;
+            <p class="small" style="margin: 6px 0 0;">Primary funder of the council through departmental funds -
               <a href="mailto:housing@austin.utexas.edu">housing@austin.utexas.edu</a></p>
           </div>
           <div class="gbox">
@@ -2703,19 +2697,19 @@
             <span class="gbox-title">Movies</span>
             <strong>Student Association for Accessible Media (UT SAAM)</strong>
             <p class="small" style="margin: 6px 0 0;">Free source of all movies played at movie nights.
-              Best contact &mdash; <a href="mailto:katresai@icloud.com">katresai@icloud.com</a></p>
+              Best contact - <a href="mailto:katresai@icloud.com">katresai@icloud.com</a></p>
           </div>
           <div class="gbox">
             <span class="gbox-title">Wellness Sponsor</span>
             <strong>MagicMind Nootropics</strong>
             <p class="small" style="margin: 6px 0 0;">Provided $1200 worth of wellness shot products for the Community Corner
-              &mdash; Contact through OnBrand</p>
+              - Contact through OnBrand</p>
           </div>
           <div class="gbox">
             <span class="gbox-title">Wellness Sponsor</span>
             <strong>Bloom Nutrition</strong>
             <p class="small" style="margin: 6px 0 0;">Provided energy drinks and green wellness powder drink mix products
-              for the Community Corner &mdash; Contact through OnBrand</p>
+              for the Community Corner - Contact through OnBrand</p>
           </div>
           <div class="gbox">
             <span class="gbox-title">Event Partner</span>
@@ -2735,7 +2729,7 @@
               for runners from Jester, in collaboration with the Longhorn Run who provided bananas.</p>
           </div>
           <div class="gbox">
-            <span class="gbox-title">Sister Council</span>
+            <span class="gbox-title">Sibling Council</span>
             <strong>Jester West Residence Hall Council</strong>
             <p class="small" style="margin: 6px 0 0;">Partner for Fall Retreat, Trail of Lights, Jester Formal Enchanted Forest, and Jedding.</p>
           </div>
@@ -2745,16 +2739,16 @@
 
         <h2 class="section">Awards</h2>
         <ul>
-          <li><strong>Red River Cinema</strong> (the Friday-night movie series) &mdash; won an OTM (Of the Month) award for Jester East.</li>
-          <li><strong>Jester Formal (Jormal)</strong> &mdash; &ldquo;Won Best Vibes!&rdquo; at year-end.</li>
-          <li><strong>Jormal</strong> &mdash; Recognized as the &ldquo;first UHD event of 2026&rdquo; because of advance fall planning.</li>
-          <li><strong>Erica</strong> &mdash; won an OTM at the national level for First Year Student of the Month.</li>
+          <li><strong>Red River Cinema</strong> (the Friday-night movie series) - won an OTM (Of the Month) award for Jester East.</li>
+          <li><strong>Jester Formal (Jormal)</strong> - &ldquo;Won Best Vibes!&rdquo; at year-end.</li>
+          <li><strong>Jormal</strong> - Recognized as the &ldquo;first UHD event of 2026&rdquo; because of advance fall planning.</li>
+          <li><strong>Erica</strong> - won an OTM at the national level for First Year Student of the Month.</li>
           <li>Multiple OTM congratulations for Erica and Austin.</li>
-          <li><strong>Spring Forward</strong> &mdash; nominated for an OTM by Austin (April 2).</li>
-          <li><strong>Professional Staff Member of the Month</strong> &mdash; Katres</li>
-          <li><strong>Advisor of the Month</strong> &mdash; Katres</li>
-          <li><strong>Professional Staff Advisor of the Year</strong> &mdash; Katres</li>
-          <li><strong>Community of the Year</strong> &mdash; Won at SWACURH 2025</li>
+          <li><strong>Spring Forward</strong> - nominated for an OTM by Austin (April 2).</li>
+          <li><strong>Professional Staff Member of the Month</strong> - Katres</li>
+          <li><strong>Advisor of the Month</strong> - Katres</li>
+          <li><strong>Professional Staff Advisor of the Year</strong> - Katres</li>
+          <li><strong>Community of the Year</strong> - Won at SWACURH 2025</li>
         </ul>
 
         <h2 class="section">Major Operational Improvements &amp; Changes</h2>
