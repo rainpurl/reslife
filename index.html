@@ -3482,16 +3482,7 @@
     w.minimized = false;
     w.el.classList.remove('hidden');
     if (fullscreen && wasHidden && !w.everOpened) {
-      // First-open sizing: ~85% of viewport, centered, capped so it doesn't get absurd on giant monitors
-      const vw = window.innerWidth;
-      const vh = window.innerHeight - 32; // minus taskbar
-      const winW = Math.min(vw * 0.85, 1400);
-      const winH = Math.min(vh * 0.85, 920);
-      w.el.classList.remove('maximized');
-      w.el.style.width  = winW + 'px';
-      w.el.style.height = winH + 'px';
-      w.el.style.left   = Math.max(0, (vw - winW) / 2) + 'px';
-      w.el.style.top    = Math.max(0, (vh - winH) / 2) + 'px';
+      w.el.classList.add('maximized');
       w.everOpened = true;
     }
     focus(name);
